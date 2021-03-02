@@ -1,4 +1,4 @@
-function MyBlueButtonUI(){
+function MyBlueButtonUI(text="Continue"){
     return `
     <div style="
     color: white;
@@ -13,7 +13,7 @@ function MyBlueButtonUI(){
     font-family: Arial;
     font-size: x-large;
     ">
-    Continue
+    ${text}
     </div>`
 }
 
