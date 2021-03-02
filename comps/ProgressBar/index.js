@@ -58,7 +58,6 @@ function Progress() {
         <div style="
         width: 125px;
         height:125px;
-
         position: relative;
         display: flex;
         ">
@@ -74,7 +73,6 @@ function Progress() {
         left: 0;
         bottom: 0;
         "src="${earthPlant}">
-
         </div>
 
 
@@ -83,7 +81,6 @@ function Progress() {
         <div style="
         width: 125px;
         height:125px;
-     
         position: relative;
         display: flex;
         ">
@@ -100,7 +97,6 @@ function Progress() {
         right: 0;
         top: 0;
         "src="${earthAnimal}">
-
         </div>
 
 
@@ -110,7 +106,6 @@ function Progress() {
         <div style="
             width: 125px;
             height:125px;
-           
             position: relative;
             display: flex;
         ">
