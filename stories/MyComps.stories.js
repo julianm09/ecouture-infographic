@@ -3,7 +3,7 @@ import { CottonAnim2 } from '../animations/CottonAnim2';
 import { ProgressBar } from '../comps/ProgressBar';
 import { ButtonWhite } from '../comps/ButtonWhite';
 import {ButtonGreen} from '../comps/ButtonGreen';
-import {BlueText} from '../ecouture-infographic/comps/BlueText'
+import {BlueText} from '../comps/BlueText'
 
 export default {
     title:"My Components"
