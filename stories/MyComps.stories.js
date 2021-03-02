@@ -4,6 +4,7 @@ import { ProgressBar } from '../comps/ProgressBar';
 import { ButtonWhite } from '../comps/ButtonWhite';
 import {ButtonGreen} from '../comps/ButtonGreen';
 import {BlueText} from '../ecouture-infographic/comps/BlueText'
+import {ErrorText} from '../comps/ErrorText'
 
 export default {
     title:"My Components"
@@ -14,3 +15,4 @@ export const progressBar = () => ProgressBar;
 export const buttonWhite = () => ButtonWhite;
 export const GButton = () => ButtonGreen;
 export const BText = () => BlueText;
+export const errorText = () => ErrorText;
