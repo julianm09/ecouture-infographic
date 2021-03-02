@@ -5,6 +5,8 @@ import { ButtonWhite } from '../comps/ButtonWhite';
 import { ShareContainer } from '../comps/ShareContainer';
 import { AnimationContainer } from '../comps/AnimationContainer';
 
+import {ButtonGreen} from '../comps/ButtonGreen';
+import {BlueText} from '../comps/BlueText'
 
 export default {
     title: "My Components"
@@ -16,3 +18,5 @@ export const buttonWhite = () => ButtonWhite;
 export const shareContainer = () => ShareContainer;
 export const animationContainer = () => AnimationContainer;
 
+export const GButton = () => ButtonGreen;
+export const BText = () => BlueText;
