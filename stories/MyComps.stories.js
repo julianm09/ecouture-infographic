@@ -5,6 +5,7 @@ import { ButtonWhite } from '../comps/ButtonWhite';
 import {ButtonGreen} from '../comps/ButtonGreen';
 import {BlueText} from '../ecouture-infographic/comps/BlueText'
 import {ErrorText} from '../comps/ErrorText'
+import {ButtonContainer} from '../comps/ButtonContainer'
 
 export default {
     title:"My Components"
@@ -16,3 +17,5 @@ export const buttonWhite = () => ButtonWhite;
 export const GButton = () => ButtonGreen;
 export const BText = () => BlueText;
 export const errorText = () => ErrorText;
+export const buttonContainer = () => ButtonContainer;
+
