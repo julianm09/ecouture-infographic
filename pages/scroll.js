@@ -10,7 +10,7 @@ console.log(img);
 
         <img class="animation" id="anim-${i}" src="../comps/Resources/${img}.svg">
 
-        <p id="anim-${i}"style="color:white; margin-top:100px; text-align:center;" >${para}</p>
+        <p id="anim-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:center;" >${para}</p>
 
         </div>
         </div>
