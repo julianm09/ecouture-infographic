@@ -1,6 +1,4 @@
-import image from '../Resources/cotton-btn.svg'
-
-const Container = () => {
+const ButtonWhiteUI = (img) => {
 
     return `<div
     style="
@@ -14,10 +12,11 @@ const Container = () => {
     justify-content: center;
     ">
 
-    <img  src="${image}">
+    <img src=${img}
+
 
     </div>`
 }
 
 
-export const ButtonWhite = Container();
+export const ButtonWhite = ButtonWhiteUI(); 

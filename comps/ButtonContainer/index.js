@@ -1,4 +1,3 @@
-
 function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', image='../Resources/cotton-btn.svg')
 {
     return `
@@ -37,7 +36,6 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 <img src='${image}'>
                 </div>
             </div>
-
             <div style='
             display: flex;
             flex: 1; 

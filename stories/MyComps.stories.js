@@ -12,10 +12,10 @@ import {ErrorText} from '../comps/ErrorText'
 import {ButtonContainer} from '../comps/ButtonContainer'
 
 
-
 export default {
     title: "My Components"
 }
+
 export const cottonAnim1 = () => CottonAnim1;
 export const cottonAnim2 = () => CottonAnim2;
 export const progressBar = () => ProgressBar;
@@ -24,9 +24,8 @@ export const buttonBlue = () => ButtonBlue;
 export const shareContainer = () => ShareContainer;
 export const animationContainer = () => AnimationContainer;
 export const questionContainer = () => QuestionContainer;
-
-export const GButton = () => ButtonGreen;
-export const BText = () => BlueText;
+export const buttonGreen = () => ButtonGreen;
+export const blueText = () => BlueText;
 export const errorText = () => ErrorText;
 export const buttonContainer = () => ButtonContainer;
 

@@ -1,5 +1,5 @@
 function ButtonGreenUI(text="Get Started"){
-    return `<div style='
+    return `<div class="button" style='
     background-color:#51B27E;
     min-height:100px;
     min-width:300px;
@@ -10,9 +10,15 @@ function ButtonGreenUI(text="Get Started"){
     color:#FFFFFF;
     font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 2px 5px 1px grey;'>
+    box-shadow:4px 4px 10px grey;
+    transition: 0.1s ease;
+
+    &:hover{
+        color:red
+    }
+    '>
     ${text}
     </div>`
 }
 
-export const ButtonGreen = ButtonGreenUI();
+ export const ButtonGreen = ButtonGreenUI(); 
