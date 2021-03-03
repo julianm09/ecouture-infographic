@@ -4,7 +4,7 @@ const scrollContainer = document.querySelector(".scroll-container");
 const gallery = [
   {
     img: "jeans",
-    text: "text 1",
+    text: "jkghasghjkdasjkdasjkdk",
   },
   {
     img: "jeans",

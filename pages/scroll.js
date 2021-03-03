@@ -6,7 +6,7 @@ console.log(img);
 //return animation-container animation and text
   return `
         <div id="trigger-${i}" class="animation-container">
-        <div>
+        <div style="display:flex; align-items:center; justify-content: center; flex-direction:column;">
 
         <img class="animation" id="anim-${i}" src="../comps/Resources/${img}.svg">
 
