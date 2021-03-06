@@ -63,6 +63,7 @@ p{
  
   display: flex;
   justify-content: center;
+
 }
 
 .logo{
@@ -72,6 +73,8 @@ p{
   height: 20vh;
   position: relative;
   width: 80vw;
+  position: absolute;
+
   
 
 }
