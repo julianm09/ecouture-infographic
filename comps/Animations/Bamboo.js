@@ -1,7 +1,7 @@
 const Bamboo = () => {
     return `
 
-    <svg width="161" height="346" viewBox="0 0 161 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="250px" height="250px" viewBox="0 0 161 346" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M60.9162 339.324H33.24V52.6357L60.9162 9V339.324Z" fill="#51B27E" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
     <path d="M60.4327 343.287H33.2398C31.0543 343.287 29.2891 341.517 29.2891 339.324C29.2891 337.132 31.0543 335.361 33.2398 335.361H60.4327C62.6182 335.361 64.3834 337.132 64.3834 339.324C64.3834 341.517 62.6182 343.287 60.4327 343.287Z" fill="#51B27E" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
     <path d="M60.4327 253.023H33.2398C31.0543 253.023 29.2891 251.252 29.2891 249.059C29.2891 246.867 31.0543 245.096 33.2398 245.096H60.4327C62.6182 245.096 64.3834 246.867 64.3834 249.059C64.3834 251.252 62.6182 253.023 60.4327 253.023Z" fill="#51B27E" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
