@@ -11,7 +11,7 @@ console.log(img);
       <div width="300px" height="300px" class="animation" id="anim-${i}"> 
       ${img}
       
-      <p id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
+      <p class="anim-para" id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
 
 
       </div>
@@ -31,6 +31,8 @@ console.log(img);
 window.onload = () => {
 
     document.getElementById(`anim-1`).style.animationName = `animate1`;
+
+    
 /*     document.getElementById(`anim-1-2`).style.animationName = `animate1-2`;
     document.getElementById(`anim-para-1`).style.animationName = `animate1-3`; */
 
