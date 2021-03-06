@@ -28,7 +28,7 @@ function QuestionUI(question = 'Which material is more sustainable?', wrongAnswe
     font-size:x-large;
     display:flex;
     text-align:center;
-    max-width:300px;
+    width="80vw"
     border-radius:5px;
     ">${question}
     </p>
@@ -46,10 +46,11 @@ function QuestionUI(question = 'Which material is more sustainable?', wrongAnswe
     color: white;
     background-color: #3884FF;
     height:50px;
-    max-width:300px;
+    width:80vw
     margin-top: 10px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px grey;
+    box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346);;
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,10 +66,10 @@ function QuestionUI(question = 'Which material is more sustainable?', wrongAnswe
       color: white;
      background-color: #3884FF;
       height:50px;
-     max-width:300px;
+     width:80vw;
      margin-top: 20px;
      border-radius: 12px;
-        box-shadow: 4px 4px 10px grey;
+     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346);;
      display: flex;
      justify-content: center;
         align-items: center;

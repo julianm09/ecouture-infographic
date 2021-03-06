@@ -39,6 +39,8 @@ p{
   flex-direction: column;
 
   top: 100px;
+
+ 
   
 }
 
@@ -70,6 +72,7 @@ p{
   height: 20vh;
   position: relative;
   width: 80vw;
+  
 
 }
 
