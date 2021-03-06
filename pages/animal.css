@@ -1,81 +1,69 @@
 body {
   margin: 0;
-  background: #51B27E;
+  background: #E67C20;
+  overflow-x: hidden;
+
 }
 
-.animation-container {
-  width: 100vw;
-  height: 100vw;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+strong {
+  color: #3884FF;
+  font-weight: 800;
 }
 
-.animation {
-  animation: 0.5s ease-in-out forwards;
-  position: relative;
-  transform: translateX(-100vw);
-  display: flex;
+
+
+#bottle-anim{
+
+    animation: 5s ease-in-out bottle infinite;
+    transition: 1s eas;
+    position: relative;
+    transform-origin: bottom;
+
+
 }
 
-.scroll-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+@keyframes bottle {
 
-@keyframes animate1 {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate2 {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate3 {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
 
-@keyframes animate4 {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate5 {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
+    fill: #3884FF;
 
-@keyframes animate6 {
-  from {
-    transform: translateX(100vw);
+    
+
   }
-  to {
-    transform: translateX(0vw);
+
+  50%{
+
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+
+
+    fill: transparent;
+  
+
   }
+
+
+
+  100%{
+
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+
+
+    fill: #3884FF;
+      
+
+    
+
+      
+  
+    }
+  
 }

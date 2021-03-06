@@ -1,4 +1,14 @@
-function Container(){
+function QuestionUI(question = 'Which material is more sustainable?', wrongAnswer = 'Cotton', rightAnswer = 'Recycled Cotton'){
+
+    
+
+
+    
+
+
+
+
+
     return `
 
     <div style="
@@ -6,7 +16,7 @@ function Container(){
     flex-direction:column;
     justify-content:space-around;
     height:500px;
-    width:55vw;
+
     ">
 
     <div style="
@@ -14,15 +24,14 @@ function Container(){
     ">
     <p style="
     color:white;
-    background-color: #A4A4A4;
     font-family:arial;
     font-size:x-large;
     display:flex;
     text-align:center;
     max-width:300px;
     border-radius:5px;
-    ">
-    Which material is more sustainable?</p>
+    ">${question}
+    </p>
     </div>
 
         <div style="
@@ -32,7 +41,8 @@ function Container(){
 
          ">
 
-    <div style="
+    <div id="wrong-answer" 
+    style="
     color: white;
     background-color: #3884FF;
     height:50px;
@@ -44,26 +54,29 @@ function Container(){
     justify-content: center;
     align-items: center;
     font-family: Arial;
-    font-size: x-large;
+    font-size: 18px;
     ">
-    Cotton
+    ${wrongAnswer}
     </div>
-
-      <div style="
+      <div onclick="wrongAnswer()"
+      
+      id="wrong-answer"
+      style="
       color: white;
      background-color: #3884FF;
       height:50px;
      max-width:300px;
      margin-top: 20px;
      border-radius: 12px;
-        box-shadow: 0px 4px 10px grey;
+        box-shadow: 4px 4px 10px grey;
      display: flex;
      justify-content: center;
         align-items: center;
         font-family: Arial;
-        font-size: x-large;
+        font-size: 18px;
+
         ">
-        Recycled Cotton
+        ${rightAnswer}
          </div>
 
      </div>
@@ -72,4 +85,4 @@ function Container(){
     `
 }
 
-export const QuestionContainer = Container();
+//export const QuestionContainer = QuestionUI();

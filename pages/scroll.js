@@ -8,9 +8,16 @@ console.log(img);
         <div id="trigger-${i}" class="animation-container">
         <div style="display:flex; align-items:center; justify-content: center; flex-direction:column;">
 
-        <img class="animation" id="anim-${i}" src="../comps/Resources/${img}.svg">
+      <div width="300px" height="300px" class="animation" id="anim-${i}"> 
+      ${img}
+      
+      <p id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
 
-        <p id="anim-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:center;" >${para}</p>
+
+      </div>
+
+
+        
 
         </div>
         </div>
@@ -24,6 +31,8 @@ console.log(img);
 window.onload = () => {
 
     document.getElementById(`anim-1`).style.animationName = `animate1`;
+/*     document.getElementById(`anim-1-2`).style.animationName = `animate1-2`;
+    document.getElementById(`anim-para-1`).style.animationName = `animate1-3`; */
 
 }
 
@@ -38,7 +47,26 @@ window.addEventListener("scroll", () => {
     if (top < 300 && top > -50) {
       console.log(top);
 
-      document.getElementById(`anim-${i}`).style.animationName = `animate${i}`;
+      document.getElementById(`anim-${i}`).style.animationName = `animate${i}`
+/*       document.getElementById(`anim-${i}-2`).style.animationName = `animate${i}-2`;
+      document.getElementById(`anim-para-${i}`).style.animationName = `animate${i}-3`; */
     }
   }
 });
+
+
+
+
+
+
+
+
+
+{/* <svg width="300px" height="300px" class="animation" id="anim-${i}"> 
+<path class="jean"></path>      
+    <image xlink:href="../comps/Animations/${img}.svg" src="yourfallback.png" width="300px" height="300px"/>    
+</svg>
+
+<svg width="300px" height="300px" class="animation" id="anim-${i}-2">       
+<image xlink:href="../comps/Animations/${img}.svg" src="yourfallback.png" width="300px" height="300px"/>    
+</svg> */}
