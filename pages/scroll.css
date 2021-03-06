@@ -15,7 +15,7 @@ p{
   animation: 0.5s ease-in-out forwards;
   position: relative;
   top: 0px;
-  width: 60vw;
+  width: 80vw;
 
 }
 
@@ -68,14 +68,15 @@ p{
   align-items: center;
   justify-content: left;
   height: 20vh;
-  position: absolute;
-  width: 60vw;
+  position: relative;
+  width: 80vw;
 
 }
 
 .logo-in{
   position: absolute;
   left: 19px;
+  top: 96px;
 
 
 }
@@ -83,6 +84,8 @@ p{
 .logo-out{
   position: absolute;
   animation: 5s rotate infinite linear;
+  
+  top: 76px;
 
 }
 
