@@ -1,104 +1,92 @@
-body{
-    margin: 0;
-    background: #AF75BD;
-}
-
-:root{
-
-
-
-
+body {
+  margin: 0;
+  background: #AF75BD;
+  overflow-x: hidden;
 
 }
 
-p{
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-
+strong {
+  color: #3884FF;
+  font-weight: 800;
 }
 
 
 
-.animation-container{
-    width: 100vw;
-    height: 100vw;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#water-resist-anim{
+
+    animation: 2s ease-in-out water-resist infinite;
+    transition: 1s ease;
+
+
 
 }
 
-.animation{
+@keyframes water-resist {
 
-    animation : 0.5s ease-in-out forwards;
-    position: relative;
-    transform: translateX(-100vw);
-    display: flex;
 
-}
 
-.scroll-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  0%{
 
-}
+    transform: translateY(-100px);
 
-@keyframes animate1{
-    from{
-        transform: translateX(-100vw);
-        
-    }
-    to{
-        transform: translateX(0vw);
+
+  }
+
+  50%{
+
+    transform: translateY(0px);
+
+
+  }
+
+
+ 
+
+  100%{
+
+    transform: translate(-100px);
+
+
       
+      
+  
     }
+  
 }
 
-@keyframes animate2{
-    from{
-        transform: translateX(100vw);
-    }
-    to{
-        transform: translateX(0vw);
-    }
+#water-resist-anim-2{
+
+  animation: 2s ease-in-out water-resist-2 infinite;
+  transition: 2s ease;
+
+
+
 }
 
-@keyframes animate3{
-    from{
-        transform: translateX(-100vw);
-    }
-    to{
-        transform: translateX(0vw);
-    }
-}
+@keyframes water-resist-2 {
 
-@keyframes animate4{
-    from{
-        transform: translateX(100vw);
-    }
-    to{
-        transform: translateX(0vw);
-    }
-}
 
-@keyframes animate5{
-    from{
-        transform: translateX(-100vw);
-    }
-    to{
-        transform: translateX(0vw);
-    }
-}
 
-@keyframes animate6{
-    from{
-        transform: translateX(100vw);
+  0%{
+
+    transform: translateY(-100px);
+    
+
+  }
+
+  50%{
+
+    transform: translateY(0px);
+
+  }
+
+
+ 
+
+  100%{
+
+    transform: translate(100px);
+
     }
-    to{
-        transform: translateX(0vw);
-    }
+
 }

@@ -1,81 +1,55 @@
 body {
   margin: 0;
-  background: #E67C20;
+  background: #51B27E;
+
 }
 
-.animation-container {
-  width: 100vw;
-  height: 100vw;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+strong {
+  color: #3884FF;
+  font-weight: 800;
 }
 
-.animation {
-  animation: 0.5s ease-in-out forwards;
-  position: relative;
-  transform: translateX(-100vw);
-  display: flex;
+
+
+#bamboo-anim{
+
+    animation: 10s ease-in-out bamboo infinite;
+    transition: 1s ease;
+
+
+
 }
 
-.scroll-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+@keyframes bamboo {
 
-@keyframes animate1 {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate2 {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate3 {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
+  0%{
 
-@keyframes animate4 {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0vw);
-  }
-}
+    stroke-dasharray: 100;
+    stroke-dashoffset: 1000;
+  
 
-@keyframes animate5 {
-  from {
-    transform: translateX(-100vw);
   }
-  to {
-    transform: translateX(0vw);
-  }
-}
 
-@keyframes animate6 {
-  from {
-    transform: translateX(100vw);
+
+  50%{
+
+    stroke-dasharray: 100;
+
+    stroke-dashoffset: 500;
+
   }
-  to {
-    transform: translateX(0vw);
-  }
+
+
+ 
+
+  100%{
+
+    stroke-dasharray: 100;
+    stroke-dashoffset: 1000;
+    
+  
+    }
+  
 }

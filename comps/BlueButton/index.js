@@ -6,7 +6,7 @@ function MyBlueButtonUI(text="Continue"){
     height:50px;
     max-width:300px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px grey;
+    box-shadow: 4px 4px 10px grey;
     display: flex;
     justify-content: center;
     align-items: center;
