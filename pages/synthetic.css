@@ -21,6 +21,43 @@ strong {
 
 }
 
+#left-bone{
+  animation: 2s ease left-bone infinite;
+  transition: 1s ease;
+}
+
+#right-bone{
+  animation: 2s ease left-bone infinite;
+  transition: 1s ease;
+}
+
+
+.fuel{
+  animation: 3s ease fuel infinite;
+  transition: .5s ease;
+}
+
+
+.bone{
+  animation: 3s ease bone infinite;
+  transition: .5s ease;
+}
+
+.bolt{
+  animation: 2s ease bolt infinite;
+  transition: 2s ease;
+}
+
+.cloud-left{
+  animation: 2s ease left-cloud infinite;
+  transition: 2s ease;
+}
+
+.cloud-right{
+  animation: 2s ease right-cloud infinite;
+  transition: 2s ease;
+}
+
 @keyframes water-resist {
 
 
@@ -51,6 +88,48 @@ strong {
       
       
   
+    }
+  
+}
+
+@keyframes left-bone {
+
+
+
+  0%{
+
+    opacity: 0;
+
+
+  }
+
+
+  100%{
+
+
+    opacity: 1;
+
+    }
+  
+}
+
+@keyframes right-bone {
+
+
+
+  0%{
+
+    opacity: 0;
+
+
+  }
+
+
+  100%{
+
+
+    opacity: 1;
+
     }
   
 }
@@ -95,4 +174,119 @@ strong {
 
     }
 
+}
+
+@keyframes fuel {
+
+
+
+  0%{
+
+    opacity: 0;
+
+
+  }
+
+
+  100%{
+
+
+    opacity: 1;
+
+    }
+  
+}
+
+@keyframes bone {
+
+
+
+  0%{
+
+    opacity: 1;
+
+
+  }
+
+
+  100%{
+
+
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes bolt {
+
+
+
+  0%{
+
+    opacity: 1;
+
+
+  }
+
+  50%{
+
+    opacity: 0;
+  }
+
+  75%{
+
+    opacity: 1;
+  }
+
+
+  100%{
+
+
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes left-cloud {
+
+
+
+  0%{
+    transform: translate(0px);
+    opacity: 1;
+
+
+  }
+
+
+  100%{
+
+    transform: translate(-50px);
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes right-cloud {
+
+
+
+  0%{
+    transform: translate(0px);
+    opacity: 1;
+
+
+  }
+
+
+  100%{
+
+    transform: translate(50px);
+    opacity: 0;
+
+    }
+  
 }

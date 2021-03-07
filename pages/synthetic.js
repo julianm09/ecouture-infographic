@@ -9,11 +9,11 @@ const gallery = [
     text: "<Strong>Polyester </Strong>is the most common fiber in our garment. The fibers are very tear and water resistant which is especially useful for sportswear.",
   },
   {
-    img: 'animation',
+    img: SkullBones(),
     text: "The transformation of crude oil into petrochemicals <Strong>releases toxins </strong>into the atmosphere that are dangerous for human and ecosystem health.",
   },
   {
-    img: "animation",
+    img: FossilFuel(),
     text: "Polyester is a synthetic fiber derived from petroleum, a <strong>nonrenewable fossil fuel.</strong>",
   },
   {
@@ -21,11 +21,11 @@ const gallery = [
     text: "Nearly <strong>70 million barrels of oil </strong>are used each year to make polyester around the world, which is now the most commonly used fiber in making clothes.",
   },
   {
-    img: "animation",
+    img: Lightning(),
     text: "<strong>70% less energy </strong>is required to produce Recycled Polyester.",
   },
   {
-    img: "animation",
+    img: CloudsEarth(),
     text: "Producing recycled polyester requires fewer resources and far <strong>less CO2 emissions.</strong>",
   },
 ];
