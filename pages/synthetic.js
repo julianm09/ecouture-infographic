@@ -21,7 +21,7 @@ const gallery = [
     text: "Nearly <strong>70 million barrels of oil </strong>are used each year to make polyester around the world, which is now the most commonly used fiber in making clothes.",
   },
   {
-    img: "animation",
+    img: Lightning(),
     text: "<strong>70% less energy </strong>is required to produce Recycled Polyester.",
   },
   {

@@ -43,6 +43,11 @@ strong {
   transition: .5s ease;
 }
 
+.bolt{
+  animation: 2s ease bolt infinite;
+  transition: 2s ease;
+}
+
 @keyframes water-resist {
 
 
@@ -192,6 +197,37 @@ strong {
     opacity: 1;
 
 
+  }
+
+
+  100%{
+
+
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes bolt {
+
+
+
+  0%{
+
+    opacity: 1;
+
+
+  }
+
+  50%{
+
+    opacity: 0;
+  }
+
+  75%{
+
+    opacity: 1;
   }
 
 

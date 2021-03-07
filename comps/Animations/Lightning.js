@@ -1,4 +1,6 @@
-<svg width="243" height="166" viewBox="0 0 243 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Lightning = () => {
+    return `
+    <svg width="243" height="166" viewBox="0 0 243 166" fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <path class="bolt" d="M32.89 95.3811H3L8.89 129.031H17.06L14.53 153.971L34.06 120.791H23.06L32.89 95.3811Z" fill="#AF75BD" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
     <path class="bolt" d="M32.89 3.3811H3L8.89 37.0311H17.06L14.53 61.9711L34.06 28.7911H23.06L32.89 3.3811Z" fill="#AF75BD" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
@@ -12,3 +14,6 @@
     <path class="bolt" d="M236.89 3.3811H207L212.89 37.0311H221.06L218.53 61.9711L238.06 28.7911H227.06L236.89 3.3811Z" fill="#AF75BD" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
 
 </svg>
+
+    `
+}
