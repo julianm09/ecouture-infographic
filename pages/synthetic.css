@@ -48,6 +48,16 @@ strong {
   transition: 2s ease;
 }
 
+.cloud-left{
+  animation: 2s ease left-cloud infinite;
+  transition: 2s ease;
+}
+
+.cloud-right{
+  animation: 2s ease right-cloud infinite;
+  transition: 2s ease;
+}
+
 @keyframes water-resist {
 
 
@@ -234,6 +244,48 @@ strong {
   100%{
 
 
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes left-cloud {
+
+
+
+  0%{
+    transform: translate(0px);
+    opacity: 1;
+
+
+  }
+
+
+  100%{
+
+    transform: translate(-50px);
+    opacity: 0;
+
+    }
+  
+}
+
+@keyframes right-cloud {
+
+
+
+  0%{
+    transform: translate(0px);
+    opacity: 1;
+
+
+  }
+
+
+  100%{
+
+    transform: translate(50px);
     opacity: 0;
 
     }

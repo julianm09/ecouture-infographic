@@ -25,7 +25,7 @@ const gallery = [
     text: "<strong>70% less energy </strong>is required to produce Recycled Polyester.",
   },
   {
-    img: "animation",
+    img: CloudsEarth(),
     text: "Producing recycled polyester requires fewer resources and far <strong>less CO2 emissions.</strong>",
   },
 ];
