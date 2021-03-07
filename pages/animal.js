@@ -17,8 +17,8 @@ const gallery = [
     text: "The ground on sheep farms is prone to overgrazing. This leads to a <strong>lack of nutrients and strength in the soil </strong> over time, degrading and weakening it.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Drop(),
+    text: "<strong>Recycled Wool</strong> uses less water compared to virgin wool by a factor of 9.",
   },
   {
     img: "animation",
