@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
 </head>
-<body>
+
+<body style="background:black">
 
 
-    <a href="./pages/animal.html">animal</a>
-    <a href="./pages/cotton.html">cotton</a>
-    <a href="./pages/plant.html">plant</a>
-    <a href="./pages/synthetic.html">synthetic</a>
+    <script>
+
+        
+        window.onload = () => {
+
+
+            //when window loads and completed levels exist go to nav page 
+            if(localStorage.completedLevels){
+
+
+                window.location.href = './pages/nav.html'
+
+                //when window loads and completed levels dont exist go to intro page 
+            } else {
+       
+                window.location.href = './pages/intro.html'
+            }
+
+
+            
+        }
+    </script>
+
+
 
     
 </body>
