@@ -2,27 +2,57 @@ function QuestionUI(
   question = "Which material is more sustainable?",
   wrongAnswer = "Cotton",
   rightAnswer = "Recycled Cotton",
-  wrongPath = "../../index.html",
+  wrongPath = "../../pages/wrong.html",
   rightPath = "../../index.html",
   completed
 ) {
 
 
+//get state from local storage 
+let completedState = {}
 
 
-right = (el) => {
+/* localStorage.completedLevels ? completedState = JSON.parse(localStorage.getItem("completedLevels")) : completedState = completedLevels
+ */
 
-    JSON.parse(localStorage.getItem("completedLevels") || "[]");
-    console.log(completed + 'is complete') 
-    completedLevels.completed = true
-    console.log(completedLevels)
-    localStorage.setItem("completedLevels", JSON.stringify(completedLevels));
+console.log(initialState)
+console.log(localStorage.completedLevels)
+
+if(localStorage.completedLevels){
+    console.log(localStorage)
+    completedState = JSON.parse(localStorage.getItem("completedLevels"))
+} else {
+    completedState = initialState
+}
+
+handleComplete = () => {
+
+    
 
 }
 
-wrong = (el) => {
-    window.location.href = wrongPath;
+//handle click of right answer
+right = (el) => {
 
+
+
+    completedState[completed] = true 
+    localStorage.setItem("completedLevels", JSON.stringify(completedState));
+    window.location.href = rightPath;
+
+}
+
+
+//handle click of wrong answer
+
+
+
+wrong = (el) => {
+/*     window.location.href = wrongPath; */
+
+completedState[completed] = true 
+localStorage.setItem("completedLevels", JSON.stringify(completedState));
+window.location.href = wrongPath;
 }
 
 

@@ -9,7 +9,7 @@ const gallery = [
     text: "A pair of jeans made from 1kg of cotton fiber can take up to <strong>20,000 litres</strong> of water to produce.",
   },
   {
-    img: 'animation',
+    img: 'hi',
     text: "text",
   },
   {
@@ -36,6 +36,5 @@ for (var i = 1; i < 7; i++) {
   scrollContainer.innerHTML += ScrollContainer(i, gallery[i - 1].img, gallery[i - 1].text);
 }
 
-question.innerHTML += QuestionUI("Which material is more sustainable?", "Cotton", "Recycled Cotton", "../../index.html", "../../index.html")
+question.innerHTML += QuestionUI("Which material is more sustainable?", "Cotton", "Recycled Cotton", "../pages/wrong.html", "../../index.html", 'animal')
 
-logo.innerHTML += Logo()
