@@ -8,16 +8,14 @@ console.log(img);
         <div id="trigger-${i}" class="animation-container">
         <div style="display:flex; align-items:center; justify-content: center; flex-direction:column;">
 
-      <div width="300px" height="300px" class="animation" id="anim-${i}"> 
-      ${img}
-      
-      <p class="anim-para" id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
-
-
-      </div>
-
-
+        <div width="300px" height="300px" class="animation" id="anim-${i}"> 
+        ${img}
         
+        <p class="anim-para" id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
+
+
+        </div>
+
 
         </div>
         </div>

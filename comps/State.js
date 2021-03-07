@@ -1,5 +1,4 @@
-const completedLevels = {
-
+const initialState = {
     'cotton':false,
     'animal':false,
     'plant':false,
