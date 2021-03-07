@@ -11,6 +11,7 @@ strong {
 }
 
 
+
 /* Bottle Animation */
 
 #bottle-anim{
@@ -75,7 +76,7 @@ strong {
 }
 
 #head, #R-eye, #L-eye, #mouth{
-  animation: 3s headTilt infinite;
+  animation: 2s headTilt infinite;
   transition: 1s;
   position: relative;
 }
@@ -114,18 +115,15 @@ strong {
 @keyframes headTilt{
   0%{
 
-    transform: rotate(-10deg);
-    transform-origin: center;
+    transform: rotate(0deg);
 
   }
   50%{
-    transform: rotate(10deg);
-    transform-origin: center;
+    transform: rotate(-10deg);
   }
 
   100%{
-    transform: rotate(-10deg);
-    transform-origin: center;
+    transform: rotate(0deg);
   }
 
 }
@@ -238,4 +236,88 @@ strong {
 
     }
 
+}
+
+/* Water Drops Animation */
+
+.droplet{
+  animation: 4s ease-in-out droplet infinite;
+  position: absolute;
+  transform-origin: center;
+}
+
+#drop5{
+  display: block;
+  animation: none;
+}
+
+@keyframes droplet{
+
+  0%{
+    transform: scale(0,0)
+  }
+
+  50%{
+    transform: scale(1,1);
+  }
+  100%{
+    transform: scale(0,0);
+  }
+}
+
+/* Sheep Icon Animation */
+
+#border{
+  animation: 10s spin linear infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+#icon{
+  animation: 2s fillIcon ease-in-out infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fillIcon{
+  0%{
+    fill: white;
+  }
+
+  50%{
+    fill: #E67C20;
+  }
+
+  100%{
+    fill: white;
+  }
+}
+
+/* Earth 5 Percent Animation */
+
+#fivePer{
+  animation: 5s ease-in-out five infinite;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes five{
+  0%{
+    transform: scale(1.5,1.5);
+  }
+  50%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1.5,1.5);
+  }
 }

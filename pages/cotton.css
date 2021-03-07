@@ -10,11 +10,15 @@ strong {
   font-weight: 800;
 }
 
+.white {
+  color:white;
+}
 
+/*Jeans Animations*/
 
 #jeans-anim{
 
-    animation: 5s ease-in-out bottle infinite;
+    animation: 5s ease-in-out jeans infinite;
     transition: 1s eas;
     position: relative;
     transform-origin: bottom;
@@ -24,7 +28,7 @@ strong {
 
 }
 
-@keyframes bottle {
+@keyframes jeans {
 
 
 
@@ -69,3 +73,307 @@ strong {
     }
   
 }
+
+/*Pesticide Animations*/
+#all{
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from{
+   transform: rotate(0deg);
+
+  }
+  50%{
+  transform: rotate(30deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+
+
+#can{
+
+  animation: 5s ease-in-out Pesticide infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes  Pesticide{
+
+0%{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+  fill: #51B27E;
+}
+
+50%{
+  stroke-dasharray: 200;
+  stroke-dashoffset: 1000;
+  fill: transparent;
+}
+
+100%{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+  fill: #51B27E;
+  }
+
+}
+
+.spray{
+
+  animation: 5s ease-in-out Pesticide infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+
+  
+
+
+}
+
+/*Waves Animations*/
+
+#waves{
+  animation: wavesrotation 5s infinite linear;
+  transition: 1s eas;
+}
+
+@keyframes wavesrotation {
+  from{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
+
+
+
+
+#four{
+  animation: 3s  four infinite;
+  
+}
+@keyframes four {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+
+
+}
+
+#three{
+  animation: 3s  four infinite;
+
+}
+@keyframes three {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+
+
+}
+
+#two{
+  animation: 3s  four infinite;
+
+}
+@keyframes two {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+
+
+}
+
+#one{
+  animation: 3s  four infinite;
+ 
+}
+@keyframes one {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+
+
+}
+
+
+
+/*Cotton Animations*/
+
+#bottom{
+animation: 3s ease-in-out bottom infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes  bottom{
+0%{
+  fill: #51B27E
+}
+50%{
+  fill: transparent;
+}
+100%{
+  fill: #51B27E;
+  }
+}
+
+#top{
+  animation: 3s ease-in-out top infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: top;
+  }
+  
+  @keyframes  top{
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+  50%{
+    stroke-dasharray: 800;
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    }
+  }
+
+
+
+/*Truck Animations*/
+
+#truckall{
+  animation: drive 6s linear infinite;
+  position: relative;
+   }
+   @keyframes drive {
+    from{
+      right:100px;
+    }
+    50%{
+      right:0px;
+    }
+    to{
+      right:100px;
+    }
+   }
+
+#bigpipe{
+  animation: floating 2s ease-in-out infinite;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+
+#smallpipe{
+  animation: floating 2s ease-in-out infinite;
+  animation-delay: 1s;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+.smoke{
+  animation: floating 2s ease-in-out infinite;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+
+.moresmoke{
+  position: relative;
+  right:10px;
+  animation: morefloating 2s ease-in-out infinite;
+  }
+  @keyframes morefloating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 10px);}
+    to {transform: translate(0, 0px);}
+  }
+
+#body{
+  animation: 3s ease-in-out bottom infinite;
+  animation-name: bodyfill;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes  bodyfill{
+0%{
+  fill: transparent;
+}
+
+
+100%{
+  fill: #af75bd;
+  }
+}
+
+  
+/*Factory Animations*/
+.doors{
+  animation: 4s ease-in-out infinite linear;
+  animation-name: entrances;
+}
+
+@keyframes entrances{
+
+0%{
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1000;
+}
+
+100%{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+ 
+}
+
+}
+
+  
+
+#cloud{
+  animation: cloudfloat 4s ease-in-out infinite;
+}
+
+@keyframes cloudfloat{
+  from {transform: translate(0, 0px); fill:transparent;}
+  50% {transform: translate(0, 5px); fill: #51B27E;}
+  to {transform: translate(0, 0px); fill:transparent;}
+}
+

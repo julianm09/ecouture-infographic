@@ -65,7 +65,7 @@ strong {
   0%{
 
     transform: translatex(100px);
-    opacity: 0;
+    
 
 
   }
@@ -150,7 +150,6 @@ strong {
   0%{
 
     transform: translatex(-100px);
-    opacity: 0;
     
 
   }
