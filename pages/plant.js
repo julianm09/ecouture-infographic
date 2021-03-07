@@ -6,23 +6,23 @@ const question = document.querySelector(".question");
 const gallery = [
   {
     img: Bamboo(),
-    text: "<strong>Bamboo</strong> requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots.",
+    text: "<strong>Bamboo</strong> requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as <strong style=color:white> new plants grow from the previous bamboos roots.</strong>",
   },
   {
     img: BambooSkull(),
-    text: "The process of manufacturing bamboo requires the use of strong chemical solvents. These have the potential to <strong>harm anyone</strong> using the product. ",
+    text: "The process of manufacturing bamboo requires the use of strong chemical solvents. These have the potential to <strong style=color:white>harm anyone</strong> using the product. ",
   },
   {
     img: WaveSkulls(),
-    text: "The chemicals used in bamboo processing have the potential to harm the environment through water pollution. ",
+    text: "The chemicals used in bamboo processing have the potential to harm the environment through <strong style=color:white> water pollution.</strong> ",
   },
   {
     img: Recycle(),
-    text: "Linen uses a much smaller amount of energy, pesticides, insecticides, and fertilizers than other massively produced fibres such as cotton and polyester.",
+    text: "<strong>Linen</strong> uses a much <strong style=color:white> smaller amount of energy, pesticides, insecticides, and fertilizers </strong> than other massively produced fibres such as cotton and polyester.",
   },
   {
     img: WaterCup(),
-    text: "Linen requires 60% less water for growth in comparison to cotton. Linen also has a higher carbon absorption rate than cotton.",
+    text: "Linen requires <strong style=color:white> 60% less water </strong> for growth in comparison to cotton. Linen also has a higher carbon absorption rate than cotton.",
   },
   {
     img: "animation",

@@ -221,3 +221,16 @@ strong {
     transform: scaleY(2.8);
   }
 }
+
+#percentage{
+  animation: 3s percentage ease-in-out infinite;
+}
+
+@keyframes percentage{
+  0%,100%{
+    transform: translateX(-12px);
+  }
+  50%{
+    transform: translateX(12px);
+  }
+}
