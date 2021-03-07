@@ -21,8 +21,8 @@ const gallery = [
     text: "<strong>Recycled Wool</strong> uses less water compared to virgin wool by a factor of 9.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: SheepIcon(),
+    text: "Modern day sorting methods <strong>remove the need to dye</strong> recycled wools, reducing water and chemical usage drastically.",
   },
   {
     img: "animation",

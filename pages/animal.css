@@ -267,3 +267,40 @@ strong {
     transform: scale(0,0);
   }
 }
+
+/* Sheep Icon Animation */
+
+#border{
+  animation: 10s spin linear infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+#icon{
+  animation: 2s fillIcon ease-in-out infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fillIcon{
+  0%{
+    fill: white;
+  }
+
+  50%{
+    fill: #E67C20;
+  }
+
+  100%{
+    fill: white;
+  }
+}
