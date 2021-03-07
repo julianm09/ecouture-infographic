@@ -100,54 +100,26 @@ strong {
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
-
-  
-
-
 }
 
 @keyframes  Pesticide{
 
-
-
 0%{
   stroke-dasharray: 500;
   stroke-dashoffset: 1000;
-
-
-  fill: #51B27E
-
-  
-
+  fill: #51B27E;
 }
 
 50%{
-
   stroke-dasharray: 200;
   stroke-dashoffset: 1000;
-
-
   fill: transparent;
-
-
 }
 
-
-
 100%{
-
   stroke-dasharray: 500;
   stroke-dashoffset: 1000;
-
-
-
   fill: #51B27E;
-    
-
-  
-
-    
-
   }
 
 }
@@ -168,6 +140,7 @@ strong {
 
 #waves{
   animation: wavesrotation 5s infinite linear;
+  transition: 1s eas;
 }
 
 @keyframes wavesrotation {
@@ -193,8 +166,11 @@ strong {
   0%{
     opacity: 100%;
   }
-  100%{
+  50%{
     opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
   }
 
 
@@ -295,15 +271,18 @@ animation: 3s ease-in-out bottom infinite;
 /*Truck Animations*/
 
 #truckall{
-  animation: drive 3s ease-out infinite;
+  animation: drive 6s linear infinite;
   position: relative;
    }
    @keyframes drive {
     from{
       right:100px;
     }
-    to{
+    50%{
       right:0px;
+    }
+    to{
+      right:100px;
     }
    }
 
@@ -347,13 +326,13 @@ animation: 3s ease-in-out bottom infinite;
 
 #body{
   animation: 3s ease-in-out bottom infinite;
-  animation-name: windowfill;
+  animation-name: bodyfill;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
 }
 
-@keyframes  windowfill{
+@keyframes  bodyfill{
 0%{
   fill: transparent;
 }
@@ -365,9 +344,36 @@ animation: 3s ease-in-out bottom infinite;
 }
 
   
-
-
-
-
-
 /*Factory Animations*/
+.doors{
+  animation: 4s ease-in-out infinite linear;
+  animation-name: entrances;
+}
+
+@keyframes entrances{
+
+0%{
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1000;
+}
+
+100%{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+ 
+}
+
+}
+
+  
+
+#cloud{
+  animation: cloudfloat 4s ease-in-out infinite;
+}
+
+@keyframes cloudfloat{
+  from {transform: translate(0, 0px); fill:transparent;}
+  50% {transform: translate(0, 5px); fill: #51B27E;}
+  to {transform: translate(0, 0px); fill:transparent;}
+}
+
