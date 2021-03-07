@@ -13,8 +13,8 @@ const gallery = [
     text: "Sheep produce around 19,561,740 kg of methane gas annually, one of the most toxic gases for our planet. 1 kg of methane can heat up Earth nearly <strong> 80x more than CO2 </strong> in some cases.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Tree(),
+    text: "The ground on sheep farms is prone to overgrazing. This leads to a <strong>lack of nutrients and strength in the soil </strong> over time, degrading and weakening it.",
   },
   {
     img: "animation",

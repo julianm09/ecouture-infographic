@@ -11,16 +11,59 @@ strong {
 }
 
 
+/* Bottle Animation */
 
 #bottle-anim{
 
-    animation: 5s ease-in-out bottle infinite;
-    transition: 1s eas;
+    animation: 6s ease-in-out bottle infinite;
+    transition: 1s;
     position: relative;
     transform-origin: bottom;
 
 
 }
+
+@keyframes bottle {
+
+
+
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    transform: scaleY(0.3);
+
+    fill: #3884FF;
+
+  }
+
+  50%{
+
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+    transform: scaleY(1);
+
+
+    fill: 3884FF;
+
+
+  }
+
+
+
+  100%{
+
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    transform: scaleY(0.3);
+
+    fill: #3884FF;
+
+
+
+    }
+
+}
+/* Sheep Animation */
 
 #sheepBody{
 
@@ -44,9 +87,33 @@ strong {
   transform-origin: bottom;
 }
 
+#fart{
+  position: relative;
+  left: 100px;
+  bottom: 150px;
+}
+
+#gas{
+  animation: 3s ease-out gassy infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+@keyframes gassy{
+  0%{
+    transform: scale(0,0)
+  }
+
+  50%{
+    transform: scale(1,1);
+  }
+  100%{
+    transform: scale(0,0);
+  }
+}
 @keyframes headTilt{
   0%{
-    
+
     transform: rotate(-10deg);
     transform-origin: center;
 
@@ -60,7 +127,40 @@ strong {
     transform: rotate(-10deg);
     transform-origin: center;
   }
-  
+
+}
+@keyframes sheepBody {
+
+
+
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+    fill: #E67C20;
+
+  }
+
+  50%{
+
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+
+    fill: #E67C20;
+  }
+
+
+
+  100%{
+
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+
+    fill: #E67C20;
+
+    }
+
 }
 
 @keyframes sheepLegs{
@@ -76,50 +176,38 @@ strong {
     opacity:1;
   }
 }
-@keyframes bottle {
 
-
-
-  0%{
-    stroke-dasharray: 500;
-    stroke-dashoffset: 1000;
-
-
-    fill: #3884FF;
-
-    
-
-  }
-
-  50%{
-
-    stroke-dasharray: 200;
-    stroke-dashoffset: 1000;
-
-
-    fill: transparent;
-  
-
-  }
-
-
-
-  100%{
-
-    stroke-dasharray: 500;
-    stroke-dashoffset: 1000;
-
-
-
-    fill: #3884FF;
-      
-      
-  
-    }
-  
+/* Tree Animation */
+#leafy{
+  animation: 5s ease-in-out leafy infinite;
+  position: relative;
+  transform-origin: center;
 }
 
-@keyframes sheepBody {
+#stem{
+
+  animation: 5s ease-in-out stem infinite;
+  position: relative;
+  transform-origin: bottom;
+
+}
+
+@keyframes leafy{
+  0%{
+    transform: scale(0.5,0.5);
+    fill: #E67C20;
+  }
+  50%{
+    transform: scale(1,1);
+    fill: #51B27E;
+  }
+  100%{
+    transform: scale(0.5,0.5);
+    fill: #E67C20;
+  }
+}
+
+@keyframes stem {
 
 
 
@@ -127,10 +215,7 @@ strong {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-    fill: #E67C20;
-
-    
+    fill: #654321;
 
   }
 
@@ -139,10 +224,7 @@ strong {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
 
-
-    fill: #E67C20;
-  
-
+    fill: #654321;
   }
 
 
@@ -152,12 +234,8 @@ strong {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
+    fill: #654321;
 
-
-    fill: #E67C20;
-      
-      
-  
     }
-  
+
 }
