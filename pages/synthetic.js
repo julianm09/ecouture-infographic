@@ -10,23 +10,23 @@ const gallery = [
   },
   {
     img: 'animation',
-    text: "text",
+    text: "The transformation of crude oil into petrochemicals <Strong>releases toxins </strong>into the atmosphere that are dangerous for human and ecosystem health.",
   },
   {
     img: "animation",
-    text: "text",
+    text: "Polyester is a synthetic fiber derived from petroleum, a <strong>nonrenewable fossil fuel.</strong>",
   },
   {
     img: "animation",
-    text: "text",
+    text: "Nearly <strong>70 million barrels of oil </strong>are used each year to make polyester around the world, which is now the most commonly used fiber in making clothes.",
   },
   {
     img: "animation",
-    text: "text",
+    text: "<strong>70% less energy </strong>is required to produce Recycled Polyester.",
   },
   {
     img: "animation",
-    text: "text",
+    text: "Producing recycled polyester requires fewer resources and far <strong>less CO2 emissions.</strong>",
   },
 ];
 
@@ -36,5 +36,6 @@ for (var i = 1; i < 7; i++) {
   scrollContainer.innerHTML += ScrollContainer(i, gallery[i - 1].img, gallery[i - 1].text);
 }
 
-question.innerHTML += QuestionUI("Which material is more sustainable?", "Cotton", "Recycled Cotton", "../pages/wrong.html", "../index.html", "synthetic")
+
+question.innerHTML += QuestionUI("Which material is more sustainable?", "Polyester", "Recycled Polyester", "../pages/wrong.html", "../index.html", "synthetic")
 
