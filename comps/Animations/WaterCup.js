@@ -2,7 +2,7 @@ const WaterCup = () => {
     return`
     <svg width="162" height="204" viewBox="0 0 162 204" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-    <path  d="M149 141H11V194H149V141Z" fill="#3884FF" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
+    <path id=water  d="M149 141H11V194H149V141Z" fill="#3884FF" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
 
     <path  d="M140.579 3.4939V181.863H21.4215V3.4939H3.49414V200.506H158.506V3.4939H140.579Z" fill="#51B27E" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
 

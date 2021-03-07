@@ -131,3 +131,93 @@ strong {
     transform: translateX(-50px);
   }
 }
+
+#waves{
+  animation: 5s waves ease-in-out infinite;
+}
+
+@keyframes waves{
+  0%, 100% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+#waves2{
+  animation: 5s waves2 ease-in-out infinite;
+}
+
+@keyframes waves2{
+  0%, 100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+#arrow1{
+  animation: 5s arrow1 ease-in-out infinite;
+
+}
+
+@keyframes arrow1{
+0%, 100%{
+  opacity: 0;
+}
+
+50%{
+  opacity: 1;
+}
+  
+
+}
+
+#arrow2{
+  animation: 5s arrow1 ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes arrow2{
+  0%, 100%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 1;
+  }
+}
+
+#arrow3{
+  animation: 5s arrow1 ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes arrow3{
+  0%, 100%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 1;
+  }
+}
+
+#water{
+  animation: 8s water ease-in-out infinite;
+  transition: 1s;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes water{
+  0%,100%{
+    transform: scaleY(0.8)
+  }
+
+  50%{
+    transform: scaleY(2.8);
+  }
+}
