@@ -304,3 +304,23 @@ strong {
     fill: white;
   }
 }
+
+/* Earth 5 Percent Animation */
+
+#fivePer{
+  animation: 5s ease-in-out five infinite;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes five{
+  0%{
+    transform: scale(1.5,1.5);
+  }
+  50%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1.5,1.5);
+  }
+}
