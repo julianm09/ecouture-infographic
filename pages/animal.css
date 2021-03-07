@@ -76,7 +76,7 @@ strong {
 }
 
 #head, #R-eye, #L-eye, #mouth{
-  animation: 3s headTilt infinite;
+  animation: 2s headTilt infinite;
   transition: 1s;
   position: relative;
 }
@@ -115,18 +115,15 @@ strong {
 @keyframes headTilt{
   0%{
 
-    transform: rotate(-10deg);
-    transform-origin: center;
+    transform: rotate(0deg);
 
   }
   50%{
-    transform: rotate(10deg);
-    transform-origin: center;
+    transform: rotate(-10deg);
   }
 
   100%{
-    transform: rotate(-10deg);
-    transform-origin: center;
+    transform: rotate(0deg);
   }
 
 }
