@@ -21,6 +21,16 @@ strong {
 
 }
 
+#left-bone{
+  animation: 2s ease left-bone infinite;
+  transition: 1.5s ease;
+}
+
+#right-bone{
+  animation: 2s ease left-bone infinite;
+  transition: 1.5s ease;
+}
+
 @keyframes water-resist {
 
 
@@ -51,6 +61,27 @@ strong {
       
       
   
+    }
+  
+}
+
+@keyframes left-bone {
+
+
+
+  0%{
+
+    opacity: 0;
+
+
+  }
+
+
+  100%{
+
+
+    opacity: 1;
+
     }
   
 }

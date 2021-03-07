@@ -9,7 +9,7 @@ const gallery = [
     text: "<Strong>Polyester </Strong>is the most common fiber in our garment. The fibers are very tear and water resistant which is especially useful for sportswear.",
   },
   {
-    img: 'animation',
+    img: SkullBones(),
     text: "The transformation of crude oil into petrochemicals <Strong>releases toxins </strong>into the atmosphere that are dangerous for human and ecosystem health.",
   },
   {
