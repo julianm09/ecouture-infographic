@@ -9,27 +9,27 @@ const right = document.getElementById("right-answer");
 const gallery = [
   {
     img: Jeans(),
-    text: "A pair of jeans made from 1kg of cotton fiber can take up to <strong>20,000 litres</strong> of water to produce.",
+    text: "A pair of jeans made from 1kg of cotton fiber can take up to <strong>20,000 litres</strong> <strong class='white'>of water to produce</strong>.",
   },
   {
-    img: 'animation',
-    text: "text",
+    img: Pesticide(),
+    text: "<strong>Cotton</strong> production makes up for <strong class='white'>7% of all pesticides and 16% of all insecticides used on Earth</strong>.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Waves(),
+    text: "Overuse of irrigation water resulted in the Aral Sea's surface area <strong>declining by 85%.</strong> ",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Cotton(),
+    text: "<strong>Recyled Cotton</strong> makes use of textile waste which <strong class='white'>reduces the negative impacts of cotton farming</strong>.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Truck(),
+    text: "<strong>Recyling</strong> 1 ton of cotton can <strong class='white'> result in the conservation of 765,000 litres of water</strong>.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Factory(),
+    text: "Using recycled cotton <strong class='white'>reduces CO2 emissions by</strong> <strong>70%</strong> compared to regular cotton.",
   },
 ];
 
@@ -48,7 +48,7 @@ logo.innerHTML += Logo()
 wrong.addEventListener('click', () => {
 
 
-console.log('click')
+  console.log('click')
 
 
 })

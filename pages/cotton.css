@@ -10,11 +10,15 @@ strong {
   font-weight: 800;
 }
 
+.white {
+  color:white;
+}
+
 
 
 #jeans-anim{
 
-    animation: 5s ease-in-out bottle infinite;
+    animation: 5s ease-in-out jeans infinite;
     transition: 1s eas;
     position: relative;
     transform-origin: bottom;
@@ -24,7 +28,7 @@ strong {
 
 }
 
-@keyframes bottle {
+@keyframes jeans {
 
 
 
@@ -68,4 +72,62 @@ strong {
   
     }
   
+}
+
+#can{
+
+  animation: 5s ease-in-out jeans infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+
+  
+
+
+}
+
+@keyframes  {
+
+
+
+0%{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+
+
+  fill: #3884FF;
+
+  
+
+}
+
+50%{
+
+  stroke-dasharray: 200;
+  stroke-dashoffset: 1000;
+
+
+  fill: transparent;
+
+
+}
+
+
+
+100%{
+
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+
+
+
+  fill: #3884FF;
+    
+
+  
+
+    
+
+  }
+
 }
