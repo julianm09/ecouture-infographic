@@ -1,5 +1,5 @@
 
-function MyBlueButtonUI(text="Continue"){
+function MyBlueButtonUI(text = "Continue") {
     return `
     <div style="
     color: white;
@@ -18,4 +18,4 @@ function MyBlueButtonUI(text="Continue"){
     </div>`
 }
 
-export const ButtonBlue = MyBlueButtonUI();
+//export const ButtonBlue = MyBlueButtonUI();

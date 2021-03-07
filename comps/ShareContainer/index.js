@@ -59,4 +59,4 @@ const Share = () => {
 }
 
 
-export const ShareContainer = Share();
+//export const ShareContainer = Share();
