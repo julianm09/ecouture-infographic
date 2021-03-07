@@ -14,7 +14,7 @@ strong {
   color:white;
 }
 
-
+/*Jeans Animations*/
 
 #jeans-anim{
 
@@ -74,9 +74,11 @@ strong {
   
 }
 
+/*Pesticide Animations*/
+
 #can{
 
-  animation: 5s ease-in-out jeans infinite;
+  animation: 5s ease-in-out Pesticide infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
@@ -86,7 +88,7 @@ strong {
 
 }
 
-@keyframes  {
+@keyframes  Pesticide{
 
 
 
@@ -95,7 +97,7 @@ strong {
   stroke-dashoffset: 1000;
 
 
-  fill: #3884FF;
+  fill: #51B27E
 
   
 
@@ -121,7 +123,7 @@ strong {
 
 
 
-  fill: #3884FF;
+  fill: #51B27E;
     
 
   
@@ -131,3 +133,22 @@ strong {
   }
 
 }
+
+.spray{
+
+  animation: 5s ease-in-out Pesticide infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+
+  
+
+
+}
+
+
+
+/*Waves Animations*/
+/*Cotton Animations*/
+/*Truck Animations*/
+/*Factory Animations*/
