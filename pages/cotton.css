@@ -245,11 +245,47 @@ strong {
 
 }
 
-
-
-
-
-
 /*Cotton Animations*/
+
+#bottom{
+animation: 3s ease-in-out bottom infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes  bottom{
+0%{
+  fill: #51B27E
+}
+50%{
+  fill: transparent;
+}
+100%{
+  fill: #51B27E;
+  }
+}
+
+#top{
+  animation: 3s ease-in-out top infinite;
+    transition: 1s eas;
+    position: relative;
+    transform-origin: top;
+  }
+  
+  @keyframes  top{
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
+  50%{
+    stroke-dasharray: 800;
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    }
+  }
 /*Truck Animations*/
 /*Factory Animations*/
