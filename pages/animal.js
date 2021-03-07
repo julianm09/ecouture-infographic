@@ -25,8 +25,8 @@ const gallery = [
     text: "Modern day sorting methods <strong>remove the need to dye</strong> recycled wools, reducing water and chemical usage drastically.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: earthIcon(),
+    text: "Wool’s longer lifespan means that while it only makes up 1.3% of the global fibre supply, they are <strong>donated at a rate of 5%.</strong>",
   },
 ];
 
