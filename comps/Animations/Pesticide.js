@@ -1,6 +1,6 @@
 const Pesticide = () => {
     return `
-    <svg width="181" height="186" viewBox="0 0 181 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="all" width="181" height="186" viewBox="0 0 181 186" fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <line class="spray"
     x1="33.1019" y1="32.3049" x2="0.96785" y2="45.8015" stroke="#51B27E" stroke-width="5"/>

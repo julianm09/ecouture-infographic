@@ -75,6 +75,23 @@ strong {
 }
 
 /*Pesticide Animations*/
+#all{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  50%{
+    -webkit-transform: rotate(30deg);
+  }
+  to{
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+
 
 #can{
 
