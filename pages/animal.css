@@ -22,6 +22,60 @@ strong {
 
 }
 
+#sheepBody{
+
+  animation: 3s ease-in-out sheepBody infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+
+}
+
+#head, #R-eye, #L-eye, #mouth{
+  animation: 3s headTilt infinite;
+  transition: 1s;
+  position: relative;
+}
+
+#leg1, #leg2, #leg3, #leg4{
+  animation: 2s ease-in-out sheepLegs infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes headTilt{
+  0%{
+    
+    transform: rotate(-10deg);
+    transform-origin: center;
+
+  }
+  50%{
+    transform: rotate(10deg);
+    transform-origin: center;
+  }
+
+  100%{
+    transform: rotate(-10deg);
+    transform-origin: center;
+  }
+  
+}
+
+@keyframes sheepLegs{
+  0%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0.5;
+  }
+
+  100%{
+    opacity:1;
+  }
+}
 @keyframes bottle {
 
 
@@ -59,9 +113,49 @@ strong {
 
     fill: #3884FF;
       
+      
+  
+    }
+  
+}
+
+@keyframes sheepBody {
+
+
+
+  0%{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+
+    fill: #E67C20;
 
     
 
+  }
+
+  50%{
+
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+
+
+    fill: #E67C20;
+  
+
+  }
+
+
+
+  100%{
+
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+
+
+    fill: #E67C20;
+      
       
   
     }

@@ -9,8 +9,8 @@ const gallery = [
     text: "A pair of jeans made from 1kg of cotton fiber can take up to <strong>20,000 litres</strong> of water to produce.",
   },
   {
-    img: 'animation',
-    text: "text",
+    img: Gas(),
+    text: "Sheep produce around 19,561,740 kg of methane gas annually, one of the most toxic gases for our planet. 1 kg of methane can heat up Earth nearly <strong> 80x more than CO2 </strong> in some cases.",
   },
   {
     img: "animation",
