@@ -13,7 +13,7 @@ const gallery = [
     text: "The transformation of crude oil into petrochemicals <Strong>releases toxins </strong>into the atmosphere that are dangerous for human and ecosystem health.",
   },
   {
-    img: "animation",
+    img: FossilFuel(),
     text: "Polyester is a synthetic fiber derived from petroleum, a <strong>nonrenewable fossil fuel.</strong>",
   },
   {
