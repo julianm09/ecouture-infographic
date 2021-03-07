@@ -9,20 +9,20 @@ const gallery = [
     text: "<strong>Bamboo</strong> requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots.",
   },
   {
-    img: 'animation',
-    text: "text",
+    img: BambooSkull(),
+    text: "The process of manufacturing bamboo requires the use of strong chemical solvents. These have the potential to <strong>harm anyone</strong> using the product. ",
   },
   {
-    img: "animation",
-    text: "text",
+    img: WaveSkulls(),
+    text: "The chemicals used in bamboo processing have the potential to harm the environment through water pollution. ",
   },
   {
-    img: "animation",
-    text: "text",
+    img: Recycle(),
+    text: "Linen uses a much smaller amount of energy, pesticides, insecticides, and fertilizers than other massively produced fibres such as cotton and polyester.",
   },
   {
-    img: "animation",
-    text: "text",
+    img: WaterCup(),
+    text: "Linen requires 60% less water for growth in comparison to cotton. Linen also has a higher carbon absorption rate than cotton.",
   },
   {
     img: "animation",
