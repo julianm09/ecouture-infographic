@@ -62,7 +62,7 @@ window.location.href = wrongPath;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    height:500px;
+    height:100vh;
     align-items:center;
 
     ">
