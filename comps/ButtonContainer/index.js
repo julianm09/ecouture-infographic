@@ -1,16 +1,19 @@
 function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', image='../Resources/cotton-btn.svg')
+
 {
     return `
-        <div style='
+            <div style='
             display: flex;
             height: ${containerHeight}px;
             width: ${containerWidth}px;
-        '>
+            '>
+
             <div style='
             display: flex;
             flex: 1; 
             flex-direction: column;
             justify-content: space-between;'>
+
                 <div style='
                 width:${innerBoxWidthHeight}px;
                 height:${innerBoxWidthHeight}px;
@@ -34,15 +37,18 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 justify-content: center;'>
                 
                 <img src='${image}'>
+
                 </div>
-            </div>
-            <div style='
-            display: flex;
-            flex: 1; 
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-            '>
+
+                </div>
+                <div style='
+                display: flex;
+                flex: 1; 
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                '>
+
                 <div style='
                 width:${innerBoxWidthHeight}px;
                 height:${innerBoxWidthHeight}px;
@@ -54,7 +60,9 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 justify-content: center;'>
                 
                 <img src=${image}>
+
                 </div>
+
                 <div style='
                 width:${innerBoxWidthHeight}px;
                 height:${innerBoxWidthHeight}px;
@@ -66,9 +74,10 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 justify-content: center;'>
                 
                 <img src=${image}>
+                
                 </div>
             </div>
-        </div>
+     </div>
     `
 }
 
