@@ -245,6 +245,8 @@ strong {
 
 }
 
+
+
 /*Cotton Animations*/
 
 #bottom{
@@ -268,9 +270,9 @@ animation: 3s ease-in-out bottom infinite;
 
 #top{
   animation: 3s ease-in-out top infinite;
-    transition: 1s eas;
-    position: relative;
-    transform-origin: top;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: top;
   }
   
   @keyframes  top{
@@ -287,5 +289,85 @@ animation: 3s ease-in-out bottom infinite;
     stroke-dashoffset: 1000;
     }
   }
+
+
+
 /*Truck Animations*/
+
+#truckall{
+  animation: drive 3s ease-out infinite;
+  position: relative;
+   }
+   @keyframes drive {
+    from{
+      right:100px;
+    }
+    to{
+      right:0px;
+    }
+   }
+
+#bigpipe{
+  animation: floating 2s ease-in-out infinite;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+
+#smallpipe{
+  animation: floating 2s ease-in-out infinite;
+  animation-delay: 1s;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+.smoke{
+  animation: floating 2s ease-in-out infinite;
+  }
+  @keyframes floating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 5px);}
+    to {transform: translate(0, 0px);}
+  }
+
+.moresmoke{
+  position: relative;
+  right:10px;
+  animation: morefloating 2s ease-in-out infinite;
+  }
+  @keyframes morefloating{
+    from {transform: translate(0, 0px);}
+    50% {transform: translate(0, 10px);}
+    to {transform: translate(0, 0px);}
+  }
+
+#body{
+  animation: 3s ease-in-out bottom infinite;
+  animation-name: windowfill;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes  windowfill{
+0%{
+  fill: transparent;
+}
+
+
+100%{
+  fill: #af75bd;
+  }
+}
+
+  
+
+
+
+
+
 /*Factory Animations*/

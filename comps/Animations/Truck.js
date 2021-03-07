@@ -1,48 +1,84 @@
 const Truck = () => {
     return `
-    <svg width="261" height="229" viewBox="0 0 261 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="truckall" width="261" height="229" viewBox="0 0 261 229" fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <g>
-    <ellipse  cx="171" cy="17.5" rx="9" ry="8.5" fill="#C4C4C4"/>
+    <ellipse class="smoke"
+    cx="171" cy="17.5" rx="9" ry="8.5" fill="#C4C4C4"/>
 
-    <ellipse  cx="176.5" cy="9" rx="8.5" ry="9" fill="#C4C4C4"/>
+    <ellipse  class="smoke"
+    cx="176.5" cy="9" rx="8.5" ry="9" fill="#C4C4C4"/>
 
-    <circle cx="179.5" cy="26.5" r="8.5" fill="#C4C4C4"/>
+    <circle class="smoke"
+    cx="179.5" cy="26.5" r="8.5" fill="#C4C4C4"/>
 
-    <ellipse cx="189.29" cy="25.6156" rx="2.7923" ry="9.1747" transform="rotate(-7.82829 189.29 25.6156)" fill="#C4C4C4"/>
+    <ellipse class="smoke"
+    cx="189.29" cy="25.6156" rx="2.7923" ry="9.1747" transform="rotate(-7.82829 189.29 25.6156)" fill="#C4C4C4"/>
 
-    <ellipse cx="189.076" cy="37.5007" rx="2.7923" ry="9.1747" transform="rotate(-24.8126 189.076 37.5007)" fill="#C4C4C4"/>
+    <ellipse class="smoke" 
+    cx="189.076" cy="37.5007" rx="2.7923" ry="9.1747" transform="rotate(-24.8126 189.076 37.5007)" fill="#C4C4C4"/>
 
-    <ellipse cx="184" cy="19.5" rx="4" ry="4.5" fill="#C4C4C4"/>
+    <ellipse  class="smoke" 
+    cx="184" cy="19.5" rx="4" ry="4.5" fill="#C4C4C4"/>
     </g>
 
     <g>
-    <path  d="M22.1572 62.2915V131.821V165.234C22.1572 173.518 28.8729 180.234 37.1572 180.234H127.204H212.444C222.61 180.234 229.832 170.334 226.727 160.653L213.676 119.956C211.685 113.747 205.912 109.536 199.393 109.536H154.732C148.988 109.536 143.749 106.256 141.239 101.089L119.215 55.7386C116.705 50.5717 111.466 47.2915 105.722 47.2915H37.1572C28.873 47.2915 22.1572 54.0072 22.1572 62.2915Z" fill="#36B9C5" stroke="white" stroke-width="10"/>
+    <ellipse class="moresmoke"
+    cx="171" cy="17.5" rx="9" ry="8.5" fill="#C4C4C4"/>
 
-    <path  d="M89.4834 109.474H157.442C159.66 109.474 161.111 107.151 160.138 105.158L133.049 49.6898C132.546 48.6597 131.5 48.0063 130.353 48.0063H89.4834C87.8265 48.0063 86.4834 49.3495 86.4834 51.0063V106.474C86.4834 108.131 87.8265 109.474 89.4834 109.474Z" fill="#C4C4C4" stroke="white" stroke-width="10"/>
+    <ellipse  class="moresmoke"
+    cx="176.5" cy="9" rx="8.5" ry="9" fill="#C4C4C4"/>
 
-    <circle cx="50.0321" cy="178.805" r="42.5321" fill="#585858" stroke="white" stroke-width="15"/>
+    <circle class="smoke"
+    cx="179.5" cy="26.5" r="8.5" fill="#C4C4C4"/>
 
-    <circle cx="222.286" cy="190.24" r="31.0962" fill="#585858" stroke="white" stroke-width="15"/>
+    <ellipse class="moresmoke"
+    cx="189.29" cy="25.6156" rx="2.7923" ry="9.1747" transform="rotate(-7.82829 189.29 25.6156)" fill="#C4C4C4"/>
 
-    <rect x="18.9395" y="40.5" width="117.936" height="8.58013" rx="4.29006" fill="#36B9C5" stroke="white" stroke-width="5"/>
+    <ellipse class="moresmoke" 
+    cx="189.076" cy="37.5007" rx="2.7923" ry="9.1747" transform="rotate(-24.8126 189.076 37.5007)" fill="#C4C4C4"/>
 
-    <path  d="M139.375 129.487L139.375 148.785" stroke="white" stroke-width="5"/>
+    <ellipse  class="moresmoke" 
+    cx="184" cy="19.5" rx="4" ry="4.5" fill="#C4C4C4"/>
+    </g>
 
-    <path  d="M145.808 129.487L145.808 148.785" stroke="white" stroke-width="5"/>
+    <g>
+    <path id="body"
+     d="M22.1572 62.2915V131.821V165.234C22.1572 173.518 28.8729 180.234 37.1572 180.234H127.204H212.444C222.61 180.234 229.832 170.334 226.727 160.653L213.676 119.956C211.685 113.747 205.912 109.536 199.393 109.536H154.732C148.988 109.536 143.749 106.256 141.239 101.089L119.215 55.7386C116.705 50.5717 111.466 47.2915 105.722 47.2915H37.1572C28.873 47.2915 22.1572 54.0072 22.1572 62.2915Z" fill="#36B9C5" stroke="white" stroke-width="10"/>
 
-    <path  d="M152.24 129.487L152.24 148.785" stroke="white" stroke-width="5"/>
+    <path  id="window"
+    d="M89.4834 109.474H157.442C159.66 109.474 161.111 107.151 160.138 105.158L133.049 49.6898C132.546 48.6597 131.5 48.0063 130.353 48.0063H89.4834C87.8265 48.0063 86.4834 49.3495 86.4834 51.0063V106.474C86.4834 108.131 87.8265 109.474 89.4834 109.474Z" fill="#C4C4C4" stroke="white" stroke-width="10"/>
 
-    <rect x="176.72" y="86.7814" width="4.64583" height="20.3702" fill="#C4C3C2" stroke="white" stroke-width="4.64583"/>
+    <circle id="leftwheel"
+    cx="50.0321" cy="178.805" r="42.5321" fill="#585858" stroke="white" stroke-width="15"/>
 
-    <rect x="189.763" y="57.6538" width="7.15064" height="49.3205" fill="#C4C3C2" stroke="white" stroke-width="5"/>
+    <circle id="rightwheel"
+    cx="222.286" cy="190.24" r="31.0962" fill="#585858" stroke="white" stroke-width="15"/>
+
+    <rect id="roof"
+    x="18.9395" y="40.5" width="117.936" height="8.58013" rx="4.29006" fill="#36B9C5" stroke="white" stroke-width="5"/>
+
+    <path class="vent" 
+    d="M139.375 129.487L139.375 148.785" stroke="white" stroke-width="5"/>
+
+    <path class="vent"
+    d="M145.808 129.487L145.808 148.785" stroke="white" stroke-width="5"/>
+
+    <path class="vent"
+    d="M152.24 129.487L152.24 148.785" stroke="white" stroke-width="5"/>
+
+    <rect id="smallpipe"
+    x="176.72" y="86.7814" width="4.64583" height="20.3702" fill="#C4C3C2" stroke="white" stroke-width="4.64583"/>
+
+    <rect id="bigpipe" 
+    x="189.763" y="57.6538" width="7.15064" height="49.3205" fill="#C4C3C2" stroke="white" stroke-width="5"/>
 
     <circle cx="50.3895" cy="178.447" r="7.5" fill="white" stroke="white" stroke-width="14.3045"/>
 
-    <circle  cx="222.643" cy="189.883" r="6.5" fill="white" stroke="white" stroke-width="12.016"/>
+    <circle  cx="222.643" cy="189.883" r="3.5" fill="white" stroke="white" stroke-width="12.016"/>
 
     <path  d="M47.1729 123.141C72.5462 118.051 105.424 133.418 104.352 168.493" stroke="white" stroke-width="5"/>
-    
+
     <path  d="M182.26 174.516C185.834 159.864 201.201 149.5 214.78 147.714" stroke="white" stroke-width="5"/>
     </g>
 
