@@ -141,32 +141,9 @@ body {
   }
 }
 
-@keyframes animate1-2 {
-  from {
-    
-    
-  }
-  to {
-    transform: translateX(0vw);
-    
-  }
-}
-
-@keyframes animate1-3 {
-  from {
-    transform: translateX(100vw);
-    
-    
-  }
-  to {
-    transform: translateX(0vw);
-    
-  }
-}
-
 @keyframes animate2 {
   from {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
   to {
     transform: translateX(0vw);
@@ -186,7 +163,7 @@ body {
 
 @keyframes animate4 {
   from {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
   to {
     transform: translateX(0vw);
@@ -204,7 +181,7 @@ body {
 
 @keyframes animate6 {
   from {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
   to {
     transform: translateX(0vw);
@@ -212,6 +189,8 @@ body {
 }
 
 @media (min-width: 1000px) {
+
+
 
   .logo{
     width:60vw;
@@ -221,9 +200,7 @@ body {
   .question-button-container{
     flex-direction: row;
     max-width: 60vw;
-   
-  
-  
+ 
   
 }
 
@@ -277,3 +254,5 @@ flex-direction: row-reverse;
 }
 
 }
+
+
