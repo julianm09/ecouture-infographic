@@ -1,2 +1,1 @@
-document.getElementById("row4").innerHTML += MyBlueButtonUI()
-document.getElementById("row3").innerHTML += Share()
+document.getElementById('row1').innerHTML += Logo()

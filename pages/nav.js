@@ -1,10 +1,8 @@
 
-document.querySelector("#logoImg").src = "../comps/resources/greenlogo.png"
 
 document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
 
-document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175", "../comps/resources/cotton-btn.svg", "../comps/resources/animal-btn.svg", "../comps/resources/plant-btn.svg", "../comps/resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
-
+document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("25", "25", "10", "../comps/Resources/cotton-btn.svg", "../comps/Resources/animal-btn.svg", "../comps/Resources/plant-btn.svg", "../comps/Resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
 
 
 
@@ -28,11 +26,53 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
     //if all completed levels are true clear storage and go to finish page 
     if(completeAllLevels){
 
+
+
+      
+        setTimeout(function () {
+            
+              document.getElementById("topRightProgress").style.fill = "#3884FF";
+        
+
+              document.getElementById("topLeftProgress").style.fill = "#3884FF";
+         
+
+              document.getElementById("bottomRightProgress").style.fill = "#3884FF";
+
+              document.getElementById("bottomLeftProgress").style.fill = "#3884FF";
+        
+            
+          }, 2000);
+
+          setTimeout(function () {
+            
+            document.getElementById("topRightProgress").style.opacity = "0";
+      
+
+            document.getElementById("topLeftProgress").style.opacity = "0";
+       
+
+            document.getElementById("bottomRightProgress").style.opacity = "0";
+
+            document.getElementById("bottomLeftProgress").style.opacity = "0";
+
+            document.getElementById("button-container").style.transition = "1s ease";
+
+            document.getElementById("button-container").style.opacity = "0";
+
+            document.getElementById("blueText").style.transition = "1s ease";
+
+            document.getElementById("blueText").style.opacity = "0";
+      
+          
+        }, 2500);
+
+
         setTimeout(function()
         {
             localStorage.clear();
             window.location.href = '../pages/finish.html'
-        }, 6000);
+        }, 3500);
     }
 
     
@@ -75,3 +115,5 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
 
     console.log(completedState)
 
+
+    document.getElementById("logo").innerHTML += Logo()

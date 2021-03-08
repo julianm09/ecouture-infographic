@@ -1,5 +1,5 @@
-import facebook from '../Resources/facebook.svg'
-import instagram from '../Resources/instagram.svg'
+/* import facebook from '../Resources/facebook.svg'
+import instagram from '../Resources/instagram.svg' */
 
 const Share = () => {
 

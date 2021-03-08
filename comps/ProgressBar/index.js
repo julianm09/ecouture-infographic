@@ -14,7 +14,7 @@ function Progress(completedState) {
       document.getElementById("topLeftEarth").style.transition = "2s ";
       document.getElementById("cotton").style.transition = "2s";
     }
-  }, 500);
+  }, 1000);
 
   setTimeout(function () {
     if (completedState.plant) {
@@ -42,7 +42,7 @@ function Progress(completedState) {
       document.getElementById("bottomLeftEarth").style.transition = "2s ";
       document.getElementById("animal").style.transition = "2s";
     }
-  }, 2000);
+  }, 1000);
 
   setTimeout(function () {
     if (completedState.synthetic) {
@@ -56,7 +56,9 @@ function Progress(completedState) {
       document.getElementById("bottomRightEarth").style.transition = "2s ";
       document.getElementById("synthetic").style.transition = "2s";
     }
-  }, 3000);
+  }, 1000);
+
+
 
   return `
   
@@ -64,34 +66,41 @@ function Progress(completedState) {
   <div
 
     style="
-    width: 250px;
-    height:250px;
+    width: 30vh;
+    height: 30vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;    
 ">
 
         <div style="
-        width: 125px;
-        height:125px;
-        position: relative;
-        display: flex;
-        left:1px;
+        display:flex;
+        position:relative;
+
+
         ">
 
-        <img  
+        <svg 
+        
         style="
+
         position: absolute;
-        left: 0;
+        display: flex;
+        left:3px;
+        bottom:-4px
         "
-        id="topLeftProgress"
-         src="../comps/Resources/progress-cotton.svg">
+        width="15vh" height="15vh" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="topLeftProgress"  d="M121 14.8383V0C54.1684 0 0 54.6161 0 122H14.7166C14.7166 62.8038 62.289 14.8383 121 14.8383Z" fill="#36B9C5"/>
+        </svg>
+
 
         <img 
         style="
+        width: 10vh;
+        height: 10vh;
         position: absolute;
-        right: 0;
-        bottom: -1px;
+        right: -1px;
+        bottom: 0px;
         
         "
         id="topLeftEarth"
@@ -104,22 +113,31 @@ function Progress(completedState) {
 
 
         <div style="
-        width: 125px;
-        height:125px;
         position: relative;
         display: flex;
+
+
         ">
 
-        <img  style="
-        position: absolute;
-        left: ;
-        top: ;
+        <svg 
+        style="
+        position: relative;
+        display: flex;
+        left:-3px;
+        bottom:-4px;
         "
-        id="topRightProgress"
+        width="15vh" height="15vh" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="topRightProgress"  d="M106.283 122L121 122C121 54.6161 66.8316 -2.29378e-06 6.05703e-06 -5.12379e-06L5.38751e-06 14.8383C58.711 14.8383 106.283 62.8038 106.283 122Z" fill="#51B27E"/>
+        </svg>
 
-        src="../comps/Resources/progress-plant.svg">
+
+
 
         <img style="
+
+
+        width: 10vh;
+        height: 10vh;
         position: absolute;
         left: 0;
         bottom: -1px;
@@ -134,27 +152,32 @@ function Progress(completedState) {
 
 
         <div style="
-        width: 125px;
-        height:125px;
+
         position: relative;
         display: flex;
+
         ">
 
-        <img  style="
-        position: absolute;
-        left: 0;
-        top: 0;
-        left:1px;
-        " 
-        
-        id="bottomLeftProgress"
-        
-        src="../comps/Resources/progress-animal.svg">
+        <svg 
+        style="
+        position: relative;
+        display: flex;
+        left:3px;
+        top:-4px
+        "
+        width="15vh" height="15vh" viewBox="0 0 125 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path  id="bottomLeftProgress"  d="M14.7166 8.10193e-06L-5.02681e-06 8.74521e-06C-2.25037e-06 63.5176 54.1684 115 121 115L121 101.013C62.289 101.013 14.7166 55.7997 14.7166 8.10193e-06Z" fill="#E67C20"/>
+        </svg>
+
 
         <img style="
+
+
+        width: 10vh;
+        height: 10vh;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -1px;
         "
         
         id="bottomLeftEarth"
@@ -167,23 +190,37 @@ function Progress(completedState) {
 
 
         <div style="
-            width: 125px;
-            height:125px;
+    
             position: relative;
             display: flex;
+
         ">
 
-            <img  style="
-            position: absolute;
-            left: 0;
-            top: 0;
-            " 
-            
-            id="bottomRightProgress"
-            
-            src="../comps/Resources/progress-synthetic.svg">
+        <svg
+        
+        style="
+    
+            position: relative;
+            display: flex;
+
+            position: relative;
+            display: flex;
+            left:-3px;
+            top:-4px
+        "
+        
+        width="15vh" height="15vh" viewBox="0 0 125 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="bottomRightProgress"  d="M4.81551e-06 101.013L6.05703e-06 115C66.8316 115 121 63.5176 121 -9.79899e-06L106.283 -8.53185e-06C106.283 55.7997 58.711 101.013 4.81551e-06 101.013Z" fill="#AF75BD"/>
+        </svg>
+
+
+
 
             <img style="
+
+        width: 10vh;
+        height: 10vh;
+ 
             position: absolute;
             left: 0;
             top: 0;

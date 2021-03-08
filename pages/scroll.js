@@ -43,10 +43,9 @@ window.onload = () => {
 window.addEventListener("scroll", () => {
     
   for (var i = 1; i < 7; i++) {
-    var top = document.getElementById(`trigger-${i}`).getBoundingClientRect()
-      .top;
+    var top = document.getElementById(`trigger-${i}`).getBoundingClientRect().top;
 
-    if (top < 300 && top > -50) {
+    if (top < 300 && top > -5) {
       console.log(top);
 
       document.getElementById(`anim-${i}`).style.animationName = `animate${i}`
