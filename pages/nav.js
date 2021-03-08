@@ -1,6 +1,6 @@
 
-
 document.querySelector("#logoImg").src = "../comps/resources/greenlogo.png"
+
 document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
 document.querySelector("#earth").innerHTML += Progress()
 document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175", "../comps/resources/cotton-btn.svg", "../comps/resources/animal-btn.svg", "../comps/resources/plant-btn.svg", "../comps/resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
@@ -70,3 +70,11 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
     document.getElementById('progress').innerHTML += Progress(completedState)
 
     console.log(completedState)
+
+
+document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
+
+document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175");
+
+
+

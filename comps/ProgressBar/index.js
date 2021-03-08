@@ -1,6 +1,7 @@
 function Progress(completedState) {
 
 
+
     console.log(completedState)
 
 
@@ -15,7 +16,7 @@ function Progress(completedState) {
     }, 1000);
 
 
-    
+
   return `
   
   
@@ -36,10 +37,12 @@ function Progress(completedState) {
         left:1px;
         ">
 
-        <img  style="
+        <img  
+     
+        style="
         position: absolute;
         left: 0;
-        top: ;"
+
         
         id="topLeftProgress"
          src="../comps/Resources/progress-cotton.svg">
