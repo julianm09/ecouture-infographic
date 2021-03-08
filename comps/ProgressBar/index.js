@@ -128,4 +128,4 @@ function Progress() {
     </div>`;
 }
 
-export const ProgressBar = Progress();
+// export const ProgressBar = Progress();
