@@ -75,10 +75,3 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
 
     console.log(completedState)
 
-
-document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
-
-document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175");
-
-
-
