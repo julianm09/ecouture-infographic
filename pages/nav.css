@@ -15,7 +15,6 @@ html, body{
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background-color: lightgrey;
 }
 
 #earth{
@@ -24,7 +23,6 @@ html, body{
     align-items: center;
     width: 100vw;
     height: 30vh;
-    background-color: lightblue;
 }
 
 #blueText{
@@ -33,7 +31,6 @@ html, body{
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background-color: lightcoral;
 }
 
 #buttons{
@@ -42,6 +39,36 @@ html, body{
     align-items: center;
     width: 100vw;
     height: 50vh;
-    background-color: lightgreen;
+    
+}
+#topLeftProgress{
+    opacity: 0;
 }
 
+#topLeftEarth{
+    filter: grayscale(100%);
+}
+
+#topRightProgress{
+    opacity: 0;
+}
+
+#topRightEarth{
+    filter: grayscale(100%);
+}
+
+#bottomLeftProgress{
+    opacity: 0;
+}
+
+#bottomLeftEarth{
+    filter: grayscale(100%);
+}
+
+#bottomRightProgress{
+    opacity: 0;
+}
+
+#bottomRightEarth{
+    filter: grayscale(100%);
+}

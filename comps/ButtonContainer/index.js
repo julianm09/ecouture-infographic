@@ -1,4 +1,4 @@
-function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', image='../Resources/cotton-btn.svg')
+function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', cottonImage, animalImage, plantImage, syntheticImage, cottonPage, animalPage, plantPage, syntheticPage)
 
 {
     return `
@@ -22,9 +22,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'>
+                justify-content: center;'
                 
-                <img src='${image}'>
+                id="cotton"
+                onclick="window.location = '../pages/${cottonPage}.html';"
+                >
+                
+                <img src='${cottonImage}'>
                 </div>
                 <div style='
                 width:${innerBoxWidthHeight}px;
@@ -34,9 +38,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'>
+                justify-content: center;'
                 
-                <img src='${image}'>
+                id="animal"
+                onclick="window.location = '../pages/${animalPage}.html';"
+                >
+                
+                <img src='${animalImage}'>
 
                 </div>
 
@@ -57,9 +65,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'>
+                justify-content: center;'
                 
-                <img src=${image}>
+                id="plant"
+                onclick="window.location = '../pages/${plantPage}.html';"
+                >
+                
+                <img src=${plantImage}>
 
                 </div>
 
@@ -71,9 +83,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'>
+                justify-content: center;'
+
+                id="synthetic"
+                onclick="window.location = '../pages/${syntheticPage}.html';"
+                >
                 
-                <img src=${image}>
+                <img src=${syntheticImage}>
                 
                 </div>
             </div>
