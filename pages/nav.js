@@ -116,4 +116,4 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("25", "25", "
     console.log(completedState)
 
 
-    document.getElementById("logo").innerHTML += Logo()
+    document.getElementById("logo").innerHTML += Logo('../comps/Resources/earth-small.png')
