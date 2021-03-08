@@ -43,7 +43,8 @@ html, body{
     align-items: center;
     width: 100vw;
     height: 30vh;
-    padding-bottom: 50px;
+    margin-bottom: calc(5vh - 20px);
+
   
 
     
