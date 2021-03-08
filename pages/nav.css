@@ -41,4 +41,34 @@ html, body{
     height: 50vh;
     
 }
+#topLeftProgress{
+    opacity: 0
+}
 
+#topLeftEarth{
+    filter: grayscale(100%);
+}
+
+#topRightProgress{
+    opacity: 0
+}
+
+#topRightEarth{
+    filter: grayscale(100%);
+}
+
+#bottomLeftProgress{
+    opacity: 0
+}
+
+#bottomLeftEarth{
+    filter: grayscale(100%);
+}
+
+#bottomRightProgress{
+    opacity: 0
+}
+
+#bottomRightEarth{
+    filter: grayscale(100%);
+}

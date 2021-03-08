@@ -1,5 +1,16 @@
-function Progress() {
+function Progress(completedState) {
 
+
+    console.log(completedState)
+
+
+    setTimeout(function()
+    {
+        if(completedState.cotton)
+        {
+            document.getElementById("topLeftProgress").style.opacity = '100%'
+        }
+    }, 1000);
 
   return `
   
@@ -24,10 +35,10 @@ function Progress() {
         <img  style="
         position: absolute;
         left: 0;
-        top: ;
+        top: ;"
         
         id="topLeftProgress"
-        " src="../comps/Resources/progress-cotton.svg">
+         src="../comps/Resources/progress-cotton.svg">
 
         <img 
         style="
@@ -35,8 +46,8 @@ function Progress() {
         right: 0;
         bottom: -1px;
         
-        id="topLeftGlobe"
         "
+        id="topLeftEarth"
         src="../comps/Resources/earth-cotton.png">
 
        
@@ -67,7 +78,7 @@ function Progress() {
         bottom: -1px;
         "
         
-        id="topRightGlobe"
+        id="topRightEarth"
 
         src="../comps/Resources/earth-plant.png">
         </div>
