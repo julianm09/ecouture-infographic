@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro</title>
+    <link href="./intro.css" rel="stylesheet">
 </head>
 <body>
 
+    <div id="main">
+        <div id="logo">
+            <img src="../comps/Resources/greenlogo.png" id="logoImg">
+        </div>
+        <div id="earthContainer" >
+            <img id="earth" src="../comps/Resources/earth.gif">
+        </div>
+        <div id="blueText"></div>
+    </div>
+
+    <div id="greenButton">
+        <input type="button" id="quiz" onclick="window.location.href='./nav.html';" value="Get Started" />
+    </div>
+
 
 <!-- go to nav page -->
-<a id="start" href="./nav.html">hi</a>
+
+<!-- <a id="start" href="./nav.html"><div id="greenButton"></div></a> -->
 
 
 
-
+<script src="../comps/ButtonGreen/index.js"></script>
+<script src="../comps/BlueText/index.js"></script>
+<script type="module" src="./intro.js"></script>
     
 </body>
 </html>
