@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="finish.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel=" stylesheet" href="finish.css">
     <title>Document</title>
 </head>
 
@@ -20,18 +22,26 @@
         </div>
 
         <div id="row2">
-            <img id="logo" src="../comps/Resources/earth.png">
+            <img id="logo" src="../comps/Resources/earth.gif">
         </div>
 
         <div id="row3">
             <p id="challenge">Challenge your friends!</p>
             <p id="share">Click to Share</p>
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6044b002d55936aa">
-            </script>
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_inline_share_toolbox"></div>
-
+            <div id="icons">
+                <a href="https://www.facebook.com">
+                    <i data-feather="facebook" class="socialmedia"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i data-feather="instagram" class="socialmedia"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                    <i data-feather="twitter" class="socialmedia"></i>
+                </a>
+                <script>
+                    feather.replace()
+                </script>
+            </div>
         </div>
 
         <div id="row4">
@@ -39,6 +49,7 @@
         </div>
     </div>
 
+    <script src="path/to/dist/feather.js"></script>
     <script src="../comps/ShareContainer/index.js"></script>
     <script src="../comps/ButtonBlue/index.js"></script>
     <script src="../finish.js" type="module"></script>
