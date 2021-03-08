@@ -1,4 +1,16 @@
 
+// document.querySelector("#logo").innerHTML += 
+document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
+document.querySelector("#earth").innerHTML += Progress()
+document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175");
+
+
+
+
+
+
+
+
     // initialize state object 
     let completedState = {}
 
@@ -10,8 +22,6 @@
 
     //check if all completed levels are true 
     const completeAllLevels = Object.values(completedState).every(x => (x === true))
-
-
 
 
     //if all completed levels are true clear storage and go to finish page 
@@ -58,13 +68,8 @@
 
     document.getElementById('progress').innerHTML += Progress()
 
-
-    
-
-
-
-
 document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
 
 document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175");
+
 
