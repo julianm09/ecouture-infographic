@@ -19,6 +19,13 @@
 
     <button id="clear">clear storage</button>
 
+    <div id="progress"></div>
+
+    <script src="../comps/ProgressBar/index.js"></script>
+    <script type="module" src="../pages/nav.js"></script>
+
+
+
     <script>
 
 
@@ -76,6 +83,8 @@
 
 
     });
+
+    document.getElementById('progress').innerHTML += Progress()
 
 
 

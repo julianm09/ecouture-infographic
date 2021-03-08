@@ -90,14 +90,6 @@ window.location.href = wrongPath;
     flex-direction:column;
     justify-content:space-between;
     width: 80vw;
-    @media (min-width: 1000px) {
-
-
-      width: 60vw;
-
-
-    }
-
     ">
 
     <div 

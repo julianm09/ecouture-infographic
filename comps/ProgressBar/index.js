@@ -1,13 +1,3 @@
-import progressAnimal from "../Resources/progress-animal.svg";
-import earthAnimal from "../Resources/earth-animal.png";
-import earthCotton from "../Resources/earth-cotton.png";
-import earthPlant from "../Resources/earth-plant.png";
-import earthSynthetic from "../Resources/earth-synthetic.png";
-import progressCotton from "../Resources/progress-cotton.svg";
-
-import progressPlant from "../Resources/progress-plant.svg";
-import progressSynthetic from "../Resources/progress-synthetic.svg";
-
 function Progress() {
 
 
@@ -38,18 +28,20 @@ function Progress() {
         <img  style="
         position: absolute;
         left: 0;
-        top: 0;
+        top: ;
         
-        " src="${progressCotton}">
+        " src="../comps/Resources/progress-cotton.svg">
 
         <img 
-        onClick="${() => this.style.background = 'red'}"
         style="
         position: absolute;
         right: 0;
-        bottom: 0;
-        filter: ${cotton.complete ? 'none' : 'grayscale(100%)'};
-        "src="${earthCotton}">
+        bottom: -1px;
+        
+        "
+        src="../comps/Resources/earth-cotton.png">
+
+       
 
         </div>
 
@@ -65,14 +57,14 @@ function Progress() {
         <img  style="
         position: absolute;
         left: ;
-        top: 0;
-        " src="${progressPlant}">
+        top: ;
+        " src="../comps/Resources/progress-plant.svg">
 
         <img style="
         position: absolute;
         left: 0;
-        bottom: 0;
-        "src="${earthPlant}">
+        bottom: -1px;
+        "src="../comps/Resources/earth-plant.png">
         </div>
 
 
@@ -90,13 +82,13 @@ function Progress() {
         left: 0;
         top: 0;
         left:1px;
-        " src="${progressAnimal}">
+        " src="../comps/Resources/progress-animal.svg">
 
         <img style="
         position: absolute;
         right: 0;
         top: 0;
-        "src="${earthAnimal}">
+        "src="../comps/Resources/earth-animal.png">
         </div>
 
 
@@ -114,13 +106,13 @@ function Progress() {
             position: absolute;
             left: 0;
             top: 0;
-            " src="${progressSynthetic}">
+            " src="../comps/Resources/progress-synthetic.svg">
 
             <img style="
             position: absolute;
             left: 0;
             top: 0;
-            "src="${earthSynthetic}">
+            "src="../comps/Resources/earth-synthetic.png">
 
         </div>
 
@@ -128,4 +120,5 @@ function Progress() {
     </div>`;
 }
 
-export const ProgressBar = Progress();
+/* export const ProgressBar = Progress();
+ */
