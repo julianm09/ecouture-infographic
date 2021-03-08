@@ -81,8 +81,12 @@ body{
 }
 
 #row4{
-    margin-top: 20px;
-    opacity: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+
 
 }
 
@@ -97,7 +101,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
+    font-size: 16px;
     margin-bottom: 50px;
     border: transparent;
 }

@@ -69,6 +69,8 @@ window.location.href = wrongPath;
     height:100vh;
     align-items:center;
 
+    position: relative;
+
     ">
 
 
@@ -81,7 +83,7 @@ window.location.href = wrongPath;
 
     display:flex;
     text-align:center;
-    width="80vw"
+    width="100vw"
     border-radius:5px;
     ">${question}
     </p>
@@ -93,8 +95,10 @@ window.location.href = wrongPath;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    width: 80vw;
-    ">
+   width: 80vw;
+    position: absolute;
+    bottom: 5vh;
+      ">
 
     <div 
     onclick="wrong(this)" 
@@ -103,7 +107,7 @@ window.location.href = wrongPath;
     color: white;
     background-color: #3884FF;
     height:50px;
-    width:80vw
+    
     margin-top: 10px;
     border-radius: 12px;
     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346); 
@@ -125,7 +129,7 @@ window.location.href = wrongPath;
     color: white;
     background-color: #3884FF;
     height:50px;
-  
+  width:100%;
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346);;
