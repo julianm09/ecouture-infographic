@@ -28,7 +28,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${cottonPage}.html';"
                 >
                 
-                <img src='${cottonImage}'>
+                <img src='${cottonImage}' id="cottonImg">
                 </div>
                 <div style='
                 width:${innerBoxWidthHeight}px;
@@ -44,7 +44,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${animalPage}.html';"
                 >
                 
-                <img src='${animalImage}'>
+                <img src='${animalImage}' id="animalImg">
 
                 </div>
 
@@ -71,7 +71,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${plantPage}.html';"
                 >
                 
-                <img src=${plantImage}>
+                <img src=${plantImage} id="plantImg">
 
                 </div>
 
@@ -89,7 +89,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${syntheticPage}.html';"
                 >
                 
-                <img src=${syntheticImage}>
+                <img src=${syntheticImage} id="syntheticImg">
                 
                 </div>
             </div>
