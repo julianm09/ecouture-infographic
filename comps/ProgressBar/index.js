@@ -1,9 +1,8 @@
 function Progress() {
 
 
-    const cotton = {
-        "complete" : true
-    }
+
+
 
   return `
   
@@ -25,9 +24,13 @@ function Progress() {
         left:1px;
         ">
 
-        <img  style="
+        <img  
+     
+        style="
         position: absolute;
         left: 0;
+  
+        
         top: ;
         
         " src="../comps/Resources/progress-cotton.svg">
