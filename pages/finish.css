@@ -70,8 +70,10 @@ body{
 }
 #icons{
     color:#3884ff;
-    margin-top: 20px;
-}
+  height: 20vh;
+  display: flex;
+  align-items: center;
+justify-content: center;}
 
 .socialmedia{
     width: 4vw;
