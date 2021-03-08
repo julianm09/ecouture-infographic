@@ -26,6 +26,7 @@ function Progress() {
         left: 0;
         top: ;
         
+        id="topLeftProgress"
         " src="../comps/Resources/progress-cotton.svg">
 
         <img 
@@ -34,6 +35,7 @@ function Progress() {
         right: 0;
         bottom: -1px;
         
+        id="topLeftGlobe"
         "
         src="../comps/Resources/earth-cotton.png">
 
@@ -54,13 +56,20 @@ function Progress() {
         position: absolute;
         left: ;
         top: ;
-        " src="../comps/Resources/progress-plant.svg">
+        "
+        id="topRightProgress"
+
+        src="../comps/Resources/progress-plant.svg">
 
         <img style="
         position: absolute;
         left: 0;
         bottom: -1px;
-        "src="../comps/Resources/earth-plant.png">
+        "
+        
+        id="topRightGlobe"
+
+        src="../comps/Resources/earth-plant.png">
         </div>
 
 
@@ -78,13 +87,21 @@ function Progress() {
         left: 0;
         top: 0;
         left:1px;
-        " src="../comps/Resources/progress-animal.svg">
+        " 
+        
+        id="bottomLeftProgress"
+        
+        src="../comps/Resources/progress-animal.svg">
 
         <img style="
         position: absolute;
         right: 0;
         top: 0;
-        "src="../comps/Resources/earth-animal.png">
+        "
+        
+        id="bottomLeftEarth"
+        
+        src="../comps/Resources/earth-animal.png">
         </div>
 
 
@@ -102,13 +119,21 @@ function Progress() {
             position: absolute;
             left: 0;
             top: 0;
-            " src="../comps/Resources/progress-synthetic.svg">
+            " 
+            
+            id="bottomRightProgress"
+            
+            src="../comps/Resources/progress-synthetic.svg">
 
             <img style="
             position: absolute;
             left: 0;
             top: 0;
-            "src="../comps/Resources/earth-synthetic.png">
+            "
+            
+            id="bottomRightEarth"
+            
+            src="../comps/Resources/earth-synthetic.png">
 
         </div>
 
