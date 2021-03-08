@@ -1,10 +1,6 @@
 function Progress() {
 
 
-    const cotton = {
-        "complete" : true
-    }
-
   return `
   
   
@@ -120,5 +116,5 @@ function Progress() {
     </div>`;
 }
 
-/* export const ProgressBar = Progress();
- */
+
+// export const ProgressBar = Progress();
