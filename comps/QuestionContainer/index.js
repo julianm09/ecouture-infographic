@@ -50,6 +50,10 @@ right = (el) => {
 wrong = (el) => {
 /*     window.location.href = wrongPath; */
 
+
+
+
+
 completedState[completed] = true 
 localStorage.setItem("completedLevels", JSON.stringify(completedState));
 window.location.href = wrongPath;
