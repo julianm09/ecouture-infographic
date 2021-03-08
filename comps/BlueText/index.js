@@ -16,4 +16,5 @@ function BlueTextUI(text, height="150"){
 
 
 
-// export const BlueText = BlueTextUI()
+
+//export const BlueText = BlueTextUI()
