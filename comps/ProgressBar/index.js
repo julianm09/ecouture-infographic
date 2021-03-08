@@ -1,6 +1,7 @@
 function Progress(completedState) {
 
 
+
     console.log(completedState)
 
 
@@ -61,6 +62,7 @@ function Progress(completedState) {
             document.getElementById("synthetic").style.background = '#AF75BD'
             document.getElementById("syntheticImg").src = '../comps/resources/synthetic-btn-white.svg'
 
+
             document.getElementById("bottomRightProgress").style.transition = "2s "
             document.getElementById("bottomRightEarth").style.transition = "2s "
             document.getElementById("synthetic").style.transition = '2s'
@@ -68,10 +70,12 @@ function Progress(completedState) {
         }
     }, 3000);
     
+
   return `
   
   
   <div
+
     style="
     width: 250px;
     height:250px;
@@ -88,10 +92,12 @@ function Progress(completedState) {
         left:1px;
         ">
 
-        <img  style="
+        <img  
+     
+        style="
         position: absolute;
         left: 0;
-        top: ;"
+
         
         id="topLeftProgress"
          src="../comps/Resources/progress-cotton.svg">
