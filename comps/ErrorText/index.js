@@ -12,11 +12,11 @@ function ErrorTextUI(text='Sorry, cotton is not a sustainable material!', size='
         color: ${textColor};
         text-align:center;
         width:${width}px;
-        height:${66}px; 
+        height:${height}px; 
         overflow:auto;'>
             ${text}
         </div>
     `
 }
 
-export const ErrorText = ErrorTextUI();
+//export const ErrorText = ErrorTextUI();
