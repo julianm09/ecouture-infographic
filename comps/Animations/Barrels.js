@@ -1,4 +1,6 @@
-<svg width="302" height="276" viewBox="0 0 302 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Barrels = () => {
+    return `
+    <svg style="overflow: visible" width="302" height="276" viewBox="0 0 302 276" fill="none" xmlns="http://www.w3.org/2000/svg">
 
     <g>
     <path d="M176 3.38086H126V34.069H176V3.38086Z" fill="#AF75BD" stroke="white" stroke-width="5" stroke-miterlimit="10"/>
@@ -74,3 +76,6 @@
 
 </svg>
 
+
+    `
+}
