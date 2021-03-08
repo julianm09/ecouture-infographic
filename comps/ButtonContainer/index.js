@@ -1,4 +1,4 @@
-function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', image='../Resources/cotton-btn.svg')
+function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', cottonImage, animalImage, plantImage, syntheticImage)
 
 {
     return `
@@ -24,7 +24,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'>
                 
-                <img src='${image}'>
+                <img src='${cottonImage}'>
                 </div>
                 <div style='
                 width:${innerBoxWidthHeight}px;
@@ -36,7 +36,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'>
                 
-                <img src='${image}'>
+                <img src='${animalImage}'>
 
                 </div>
 
@@ -59,7 +59,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'>
                 
-                <img src=${image}>
+                <img src=${plantImage}>
 
                 </div>
 
@@ -73,7 +73,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'>
                 
-                <img src=${image}>
+                <img src=${syntheticImage}>
                 
                 </div>
             </div>
