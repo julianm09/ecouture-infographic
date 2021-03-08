@@ -1,10 +1,10 @@
-function BlueTextUI(text){
+function BlueTextUI(text, height="150"){
     return `<div style='
     font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
     color:#3884FF;
     display: inline-flex;
-    min-height:150px;
+    min-height:${height}px;
     max-width:300px;
 
 
@@ -13,6 +13,7 @@ function BlueTextUI(text){
     ${text}
     </div>`
 }
+
 
 
 

@@ -1,0 +1,81 @@
+html, body{
+    margin: 0; 
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+
+}
+
+#earth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+
+}
+
+#blueText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+ 
+
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    padding-bottom: 50px;
+  
+
+    
+}
+#topLeftProgress{
+    opacity: 0;
+}
+
+#topLeftEarth{
+    filter: grayscale(100%);
+}
+
+#topRightProgress{
+    opacity: 0;
+}
+
+#topRightEarth{
+    filter: grayscale(100%);
+}
+
+#bottomLeftProgress{
+    opacity: 0;
+}
+
+#bottomLeftEarth{
+    filter: grayscale(100%);
+}
+
+#bottomRightProgress{
+    opacity: 0;
+}
+
+#bottomRightEarth{
+    filter: grayscale(100%);
+}

@@ -50,6 +50,10 @@ right = (el) => {
 wrong = (el) => {
 /*     window.location.href = wrongPath; */
 
+
+
+
+
 completedState[completed] = true 
 localStorage.setItem("completedLevels", JSON.stringify(completedState));
 window.location.href = wrongPath;
@@ -83,10 +87,13 @@ window.location.href = wrongPath;
     </p>
   
 
-    <div style="
+    <div 
+    class="question-button-container"
+    style="
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    width: 80vw;
     ">
 
     <div 
@@ -118,7 +125,7 @@ window.location.href = wrongPath;
     color: white;
     background-color: #3884FF;
     height:50px;
-    width:80vw;
+  
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346);;

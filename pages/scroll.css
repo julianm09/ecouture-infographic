@@ -14,8 +14,9 @@ body {
 
   animation: 0.5s ease-in-out forwards;
   position: relative;
-  top: 0px;
+  top: 100px;
   width: 80vw;
+ 
 
 }
 
@@ -30,7 +31,16 @@ body {
   justify-content: center;
   position: relative;
   top: -10vh;
+  flex-direction: row;
+  z-index: -100;
 
+}
+
+.content-container{
+  display:flex; 
+  align-items:center; 
+  justify-content: center; 
+  flex-direction:column;
 }
 
 .animation {
@@ -43,6 +53,7 @@ body {
   align-items: center;
   flex-direction: column;
   top: 100px;
+  background: ;
 
  
   
@@ -67,6 +78,7 @@ body {
  
   display: flex;
   justify-content: center;
+  z-index: 300;
 
 }
 
@@ -87,6 +99,7 @@ body {
   position: absolute;
   left: 20px;
   top: 56px;
+  
 
 
 }
@@ -197,3 +210,73 @@ body {
     transform: translateX(0vw);
   }
 }
+
+@media (min-width: 1000px) {
+
+  .logo{
+    width:60vw;
+    z-index: 300;
+  }
+  
+  .question-button-container{
+    flex-direction: row;
+    max-width: 60vw;
+   
+  
+  
+  
+}
+
+.anim-para{
+  width: 30vw;
+
+  position: relative;
+  top: -5vh;
+}
+
+
+.animation-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10vh;
+  flex-direction: row;
+  z-index: -100;
+
+  
+
+}
+
+.content-container{
+  display:flex; 
+  align-items:center; 
+  justify-content: center; 
+  flex-direction:row;
+  width: 100vw;
+
+  
+}
+
+.animation {
+  animation: 0.5s ease-in-out forwards;
+  position: relative;
+  transform: translateX(-100vw);
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+width: 60vw;
+flex-direction: row-reverse;
+
+
+ 
+
+
+ 
+  
+}
+

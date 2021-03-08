@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel=" stylesheet" href="finish.css">
     <title>Document</title>
 </head>
-<body>
 
-<!-- go to index  -->
-<a href="../index.html">back to start</a>
-    
+<body>
+    <div id="main">
+        <div id="row1">
+            
+        </div>
+
+        <div id="row2">
+            <img id="logo" src="../comps/Resources/earth.gif">
+        </div>
+
+        <div id="row3">
+            <p id="challenge">Challenge your friends!</p>
+            <p id="share">Click to Share</p>
+            <div id="icons">
+                <a href="https://www.facebook.com">
+                    <i data-feather="facebook" class="socialmedia">
+                        
+                    </i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i data-feather="instagram" class="socialmedia"></i>
+                </a>
+               
+                    <i data-feather="twitter" class="socialmedia"></i>
+                </a>
+                <script>
+                    feather.replace()
+                </script>
+            </div>
+        </div>
+
+        <div id="row4">
+            <input type="button" id="home" onclick="window.location.href='./intro.html';" value="Back Home" />
+        </div>
+    </div>
+
+    <script type="module" src="./finish.js"></script>
+
+
+    <script src="../comps/ShareContainer/index.js"></script>
+    <script src="../comps/ButtonBlue/index.js"></script>
+    <script src="../comps/Logo/index.js"></script>
+
+ 
 </body>
+
 </html>

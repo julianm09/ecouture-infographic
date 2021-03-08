@@ -19,5 +19,7 @@
     "@storybook/html": "^6.1.20",
     "babel-loader": "^8.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "feather-icons": "^4.28.0"
+  }
 }
