@@ -19,6 +19,27 @@ font-weight: 800;
 .bottle{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.continue{
+
+    justify-content: center;
+    margin-top: 100px;
+    width: 300px;
 }
 
 #liquid{

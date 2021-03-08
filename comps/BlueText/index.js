@@ -16,4 +16,4 @@ function BlueTextUI(text){
 
 
 
-export const BlueText = BlueTextUI()
+//export const BlueText = BlueTextUI()
