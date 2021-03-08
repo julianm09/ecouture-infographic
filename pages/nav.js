@@ -2,7 +2,7 @@
 
 document.querySelector("#logoImg").src = "../comps/resources/greenlogo.png"
 document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
-document.querySelector("#earth").innerHTML += Progress()
+
 document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375", "175", "../comps/resources/cotton-btn.svg", "../comps/resources/animal-btn.svg", "../comps/resources/plant-btn.svg", "../comps/resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
 
 
@@ -27,9 +27,12 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
 
     //if all completed levels are true clear storage and go to finish page 
     if(completeAllLevels){
-        localStorage.clear();
-        window.location.href = '../pages/finish.html'
-        
+
+        setTimeout(function()
+        {
+            localStorage.clear();
+            window.location.href = '../pages/finish.html'
+        }, 6000);
     }
 
     
@@ -53,20 +56,21 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
 
     }
     
-    document.getElementById('completed').innerHTML += InitialState()
+    // document.getElementById('completed').innerHTML += InitialState()
 
 
-    //click clear button and clear state.. go back to index
-    document.getElementById('clear').addEventListener('click', () => {
+    // //click clear button and clear state.. go back to index
+    // document.getElementById('clear').addEventListener('click', () => {
 
-        localStorage.clear();
+    //     localStorage.clear();
 
-        window.location.href = '../index.html'
+    //     window.location.href = '../index.html'
 
 
 
-    });
+    // });
 
-    document.getElementById('progress').innerHTML += Progress(completedState)
+    
+    document.querySelector("#earth").innerHTML += Progress(completedState)
 
     console.log(completedState)
