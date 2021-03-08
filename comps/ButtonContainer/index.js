@@ -24,6 +24,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'
                 
+                id="cotton"
                 onclick="window.location = '../pages/${cottonPage}.html';"
                 >
                 
@@ -39,6 +40,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'
                 
+                id="animal"
                 onclick="window.location = '../pages/${animalPage}.html';"
                 >
                 
@@ -65,6 +67,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'
                 
+                id="plant"
                 onclick="window.location = '../pages/${plantPage}.html';"
                 >
                 
@@ -82,6 +85,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: center;'
 
+                id="synthetic"
                 onclick="window.location = '../pages/${syntheticPage}.html';"
                 >
                 

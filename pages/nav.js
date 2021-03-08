@@ -67,4 +67,6 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("375", "375",
 
     });
 
-    document.getElementById('progress').innerHTML += Progress()
+    document.getElementById('progress').innerHTML += Progress(completedState)
+
+    console.log(completedState)

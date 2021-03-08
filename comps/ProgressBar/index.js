@@ -9,9 +9,13 @@ function Progress(completedState) {
         if(completedState.cotton)
         {
             document.getElementById("topLeftProgress").style.opacity = '100%'
+            document.getElementById("topLeftEarth").style.filter = 'none'
+            document.getElementById("cotton").style.background = 'green'
         }
     }, 1000);
 
+
+    
   return `
   
   
