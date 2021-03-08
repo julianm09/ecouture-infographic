@@ -36,5 +36,6 @@ for (var i = 1; i < 7; i++) {
   scrollContainer.innerHTML += ScrollContainer(i, gallery[i - 1].img, gallery[i - 1].text);
 }
 
+
 question.innerHTML += QuestionUI("Which material is more sustainable?", "Polyester", "Recycled Polyester", "../pages/wrong.html", "../index.html", "synthetic")
 

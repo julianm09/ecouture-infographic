@@ -17,7 +17,6 @@ strong {
     transition: 1s ease;
 
 
-
 }
 
 @keyframes bamboo {
@@ -52,4 +51,186 @@ strong {
   
     }
   
+}
+
+#skull1{
+  animation: skull1 3s ease-in-out infinite;
+
+}
+
+@keyframes skull1 {
+  0%, 100% {
+    transform: translateY(-100);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+#skull2{
+  animation: skull2 2.5s ease-in-out infinite;
+}
+
+@keyframes skull2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+#skullone{
+  animation: skullone 4.5s ease-in-out infinite;
+}
+
+@keyframes skullone{
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+#skulltwo{
+  animation: skulltwo 3s ease-in-out infinite;
+}
+
+@keyframes skulltwo{
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+}
+
+#skullthree{
+  animation: skullthree 3.5s ease-in-out infinite;
+}
+
+@keyframes skullthree{
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+}
+
+#skullfour{
+  animation: skullfour 5s ease-in-out infinite;
+}
+
+@keyframes skullfour{
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+}
+
+#waves{
+  animation: 5s waves ease-in-out infinite;
+}
+
+@keyframes waves{
+  0%, 100% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+#waves2{
+  animation: 5s waves2 ease-in-out infinite;
+}
+
+@keyframes waves2{
+  0%, 100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+#arrow1{
+  animation: 5s arrow1 ease-in-out infinite;
+
+}
+
+@keyframes arrow1{
+0%, 100%{
+  opacity: 0;
+}
+
+50%{
+  opacity: 1;
+}
+  
+
+}
+
+#arrow2{
+  animation: 5s arrow1 ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes arrow2{
+  0%, 100%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 1;
+  }
+}
+
+#arrow3{
+  animation: 5s arrow1 ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes arrow3{
+  0%, 100%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 1;
+  }
+}
+
+#water{
+  animation: 8s water ease-in-out infinite;
+  transition: 1s;
+  position: relative;
+  transform-origin: bottom;
+}
+
+@keyframes water{
+  0%,100%{
+    transform: scaleY(0.8)
+  }
+
+  50%{
+    transform: scaleY(2.8);
+  }
+}
+
+#percentage{
+  animation: 3s percentage ease-in-out infinite;
+}
+
+@keyframes percentage{
+  0%,100%{
+    transform: translateX(-12px);
+  }
+  50%{
+    transform: translateX(12px);
+  }
 }
