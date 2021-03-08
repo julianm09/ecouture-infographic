@@ -2,10 +2,12 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
 
 {
     return `
-            <div style='
+            <div 
+            id="button-container"
+            style='
             display: flex;
-            height: ${containerHeight}px;
-            width: ${containerWidth}px;
+            height: ${containerHeight}vh;
+            width: ${containerWidth}vh;
             '>
 
             <div style='
@@ -15,8 +17,8 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
             justify-content: space-between;'>
 
                 <div style='
-                width:${innerBoxWidthHeight}px;
-                height:${innerBoxWidthHeight}px;
+                width:${innerBoxWidthHeight}vh;
+                height:${innerBoxWidthHeight}vh;
                 background-color:#FFFFFF;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -28,11 +30,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${cottonPage}.html';"
                 >
                 
-                <img src='${cottonImage}' id="cottonImg">
+                <img 
+                style="width:5vh;"
+                src='${cottonImage}' id="cottonImg">
                 </div>
                 <div style='
-                width:${innerBoxWidthHeight}px;
-                height:${innerBoxWidthHeight}px;
+                width:${innerBoxWidthHeight}vh;
+                height:${innerBoxWidthHeight}vh;
                 background-color:#FFFFFF;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -44,7 +48,9 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${animalPage}.html';"
                 >
                 
-                <img src='${animalImage}' id="animalImg">
+                <img 
+                style="width:5vh;"
+                src='${animalImage}' id="animalImg">
 
                 </div>
 
@@ -58,8 +64,8 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 '>
 
                 <div style='
-                width:${innerBoxWidthHeight}px;
-                height:${innerBoxWidthHeight}px;
+                width:${innerBoxWidthHeight}vh;
+                height:${innerBoxWidthHeight}vh;
                 background-color:#FFFFFF;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -71,13 +77,15 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${plantPage}.html';"
                 >
                 
-                <img src=${plantImage} id="plantImg">
+                <img
+                style="width:5vh;"
+                src=${plantImage} id="plantImg">
 
                 </div>
 
                 <div style='
-                width:${innerBoxWidthHeight}px;
-                height:${innerBoxWidthHeight}px;
+                width:${innerBoxWidthHeight}vh;
+                height:${innerBoxWidthHeight}vh;
                 background-color:#FFFFFF;
                 border-radius: 20px;
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
@@ -89,7 +97,9 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 onclick="window.location = '../pages/${syntheticPage}.html';"
                 >
                 
-                <img src=${syntheticImage} id="syntheticImg">
+                <img
+                style="width:5vh;"
+                 src=${syntheticImage} id="syntheticImg">
                 
                 </div>
             </div>
