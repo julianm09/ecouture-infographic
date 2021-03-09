@@ -37,5 +37,5 @@ for (var i = 1; i < 7; i++) {
 }
 
 
-question.innerHTML += QuestionUI("Which material is more sustainable?", "Polyester", "Recycled Polyester", "../pages/wrong.html",  "../pages/nav.html", "synthetic")
+question.innerHTML += QuestionUI("Polyester is a ________ fabric.", "Natural", "Man-made ", "../pages/wrong.html",  "../pages/nav.html", "synthetic")
 

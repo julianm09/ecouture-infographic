@@ -47,9 +47,9 @@ for (var i = 1; i < 7; i++) {
 }
 
 question.innerHTML += QuestionUI(
-  "Which material is more sustainable?",
-  "Cotton",
-  "Recycled Cotton",
+  "Efficient sorting of recycled wools removes the need to _______, saving large amounts of water and chemical usage?",
+  "Wash",
+  "Dye",
   "../pages/wrong.html",
   "../pages/nav.html",
   "animal"

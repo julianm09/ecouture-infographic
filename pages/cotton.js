@@ -39,7 +39,7 @@ for (var i = 1; i < 7; i++) {
   scrollContainer.innerHTML += ScrollContainer(i, gallery[i - 1].img, gallery[i - 1].text);
 }
 
-question.innerHTML += QuestionUI("Which material is more sustainable?", "Cotton", "Recycled Cotton", "../pages/wrong.html",  "../pages/nav.html", 'cotton')
+question.innerHTML += QuestionUI("What resource can be conserved the most with a decrease in cotton production?", "Oxygen", "Water", "../pages/wrong.html",  "../pages/nav.html", 'cotton')
 
 
 

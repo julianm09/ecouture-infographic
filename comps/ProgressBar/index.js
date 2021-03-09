@@ -3,9 +3,8 @@ function Progress(completedState) {
 
   setTimeout(function () {
     if (completedState.cotton) {
-    
       document.getElementById("topLeftProgress").style.opacity = "100%";
-      document.getElementById("topLeftEarth").style.filter = "none";
+
       document.getElementById("cotton").style.background = "#36B9C5";
       document.getElementById("cotton-para").style.color = "#ffffff";
       document.getElementById("cottonImg").src =
@@ -20,7 +19,7 @@ function Progress(completedState) {
   setTimeout(function () {
     if (completedState.plant) {
       document.getElementById("topRightProgress").style.opacity = "100%";
-      document.getElementById("topRightEarth").style.filter = "none";
+
       document.getElementById("plant").style.background = "#51B27E";
       document.getElementById("plant-para").style.color = "#ffffff";
       document.getElementById("plantImg").src =
@@ -35,7 +34,7 @@ function Progress(completedState) {
   setTimeout(function () {
     if (completedState.animal) {
       document.getElementById("bottomLeftProgress").style.opacity = "100%";
-      document.getElementById("bottomLeftEarth").style.filter = "none";
+
       document.getElementById("animal").style.background = "#E67C20";
       document.getElementById("animal-para").style.color = "#ffffff";
       document.getElementById("animalImg").src =
@@ -50,7 +49,7 @@ function Progress(completedState) {
   setTimeout(function () {
     if (completedState.synthetic) {
       document.getElementById("bottomRightProgress").style.opacity = "100%";
-      document.getElementById("bottomRightEarth").style.filter = "none";
+
       document.getElementById("synthetic").style.background = "#AF75BD";
       document.getElementById("synthetic-para").style.color = "#ffffff";
       document.getElementById("syntheticImg").src =
@@ -62,73 +61,59 @@ function Progress(completedState) {
     }
   }, 1000);
 
-
-
   return `
   
+
+
+  <div style=" display: flex; align-items: center; justify-content: center; width:0px; width:0px;">
+  <img
   
+  id="earth-img"
+  style="
+
+
+  position: absolute;
+  width: 20vh;
+  filter: grayscale(100);
+"src='../Comps/Resources/earth.png'>
+
+
   <div
 
     style="
-    width: 30vh;
-    height: 30vh;
+
+    position: relative;
     display: grid;
+
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;    
 ">
 
-        <div style="
-        display:flex;
-        position:relative;
 
 
-        ">
 
         <svg 
         
-        style="
-
-        position: absolute;
-        display: flex;
-        left:3px;
-        bottom:-4px
-        "
+ 
         width="15vh" height="15vh" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path id="topLeftProgress"  d="M121 14.8383V0C54.1684 0 0 54.6161 0 122H14.7166C14.7166 62.8038 62.289 14.8383 121 14.8383Z" fill="#36B9C5"/>
+        <path 
+        
+        
+        id="topLeftProgress"  d="M121 14.8383V0C54.1684 0 0 54.6161 0 122H14.7166C14.7166 62.8038 62.289 14.8383 121 14.8383Z" stroke="#36B9C5" fill="#36B9C5"/>
         </svg>
 
 
-        <img 
-        style="
-        width: 10vh;
-        height: 10vh;
-        position: absolute;
-        right: -1px;
-        bottom: 0px;
-        
-        "
-        id="topLeftEarth"
-        src="../comps/Resources/earth-cotton.png">
-
-       
-
-        </div>
 
 
-
-        <div style="
-        position: relative;
-        display: flex;
-
-
-        ">
+      
 
         <svg 
         style="
-        position: relative;
+
         display: flex;
-        left:-3px;
-        bottom:-4px;
+        position: absoulte;
+        left: -2px;
+        bottom: -2px;
         "
         width="15vh" height="15vh" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path id="topRightProgress"  d="M106.283 122L121 122C121 54.6161 66.8316 -2.29378e-06 6.05703e-06 -5.12379e-06L5.38751e-06 14.8383C58.711 14.8383 106.283 62.8038 106.283 122Z" fill="#51B27E"/>
@@ -137,80 +122,36 @@ function Progress(completedState) {
 
 
 
-        <img style="
 
-
-        width: 10vh;
-        height: 10vh;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        "
-        
-        id="topRightEarth"
-
-        src="../comps/Resources/earth-plant.png">
-        </div>
-
-
-
-
-        <div style="
-
-        position: relative;
-        display: flex;
-
-        ">
 
         <svg 
         style="
-        position: relative;
+
         display: flex;
-        left:3px;
-        top:-4px
+        position: absoulte;
+        right: 0;
+        top: 0;
         "
         width="15vh" height="15vh" viewBox="0 0 125 119" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path  id="bottomLeftProgress"  d="M14.7166 8.10193e-06L-5.02681e-06 8.74521e-06C-2.25037e-06 63.5176 54.1684 115 121 115L121 101.013C62.289 101.013 14.7166 55.7997 14.7166 8.10193e-06Z" fill="#E67C20"/>
         </svg>
 
 
-        <img style="
 
 
-        width: 10vh;
-        height: 10vh;
-        position: absolute;
-        right: 0;
-        top: -1px;
-        "
-        
-        id="bottomLeftEarth"
-        
-        src="../comps/Resources/earth-animal.png">
-        </div>
-
-
-    
-
-
-        <div style="
-    
-            position: relative;
-            display: flex;
-
-        ">
 
         <svg
         
         style="
     
-            position: relative;
+ 
             display: flex;
 
-            position: relative;
+
             display: flex;
-            left:-3px;
-            top:-4px
+            position: absoulte;
+            left: 0;
+            top: 0;
         "
         
         width="15vh" height="15vh" viewBox="0 0 125 119" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,26 +159,16 @@ function Progress(completedState) {
         </svg>
 
 
-
-
-            <img style="
-
-        width: 10vh;
-        height: 10vh;
- 
-            position: absolute;
-            left: 0;
-            top: 0;
-            "
-            
-            id="bottomRightEarth"
-            
-            src="../comps/Resources/earth-synthetic.png">
-
+  
         </div>
 
+
   
-    </div>`;
+    </div>
+
+
+    
+    `;
 }
 
 // export const ProgressBar = Progress();

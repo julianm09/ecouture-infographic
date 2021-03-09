@@ -25,6 +25,8 @@ font-weight: 800;
 .bottle{
     display: flex;
     justify-content: center;
+    height: 60vh;
+    align-items: center;
     
 
 
@@ -42,8 +44,6 @@ font-weight: 800;
 .description{
     display: flex;
     justify-content: center;
-    margin-bottom: 10vh;
-  
 
 }
 
@@ -57,7 +57,7 @@ font-weight: 800;
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
-    position: fixed;
+
     bottom: 0;
 
 }

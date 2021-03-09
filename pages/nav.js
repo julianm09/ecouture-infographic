@@ -28,6 +28,8 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("35", "35", "
 
 
 
+
+
       
         setTimeout(function () {
             
@@ -41,7 +43,10 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("35", "35", "
 
               document.getElementById("bottomLeftProgress").style.fill = "#3884FF";
 
-
+              document.getElementById("earth-img").style.transition = "1s ease";
+              document.getElementById("earth-img").style.filter = "grayscale(0)";
+              
+        
             
           }, 2000);
 
@@ -64,16 +69,26 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("35", "35", "
             document.getElementById("blueText").style.transition = "1s ease";
 
             document.getElementById("blueText").style.opacity = "0";
+
+       
+
+            
+
+
+         
       
           
-        }, 2500);
+        }, 4500);
+
+
+
 
 
         setTimeout(function()
         {
             localStorage.clear();
             window.location.href = '../pages/finish.html'
-        }, 3500);
+        }, 5500);
     }
 
     

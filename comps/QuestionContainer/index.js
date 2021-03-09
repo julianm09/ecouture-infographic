@@ -1,7 +1,7 @@
 function QuestionUI(
-  question = "Which material is more sustainable?",
-  wrongAnswer = "Cotton",
-  rightAnswer = "Recycled Cotton",
+  question,
+  wrongAnswer,
+  rightAnswer,
   wrongPath = "../../pages/wrong.html",
   rightPath = "../../pages/nav.html",
   completed
@@ -70,6 +70,7 @@ window.location.href = wrongPath;
     flex-direction:column;
     justify-content:space-around;
     height:100vh;
+    width: 80vw;
     align-items:center;
 
     position: relative;
@@ -86,8 +87,9 @@ window.location.href = wrongPath;
 
     display:flex;
     text-align:center;
-    width="100vw"
+    max-width:"80vw";
     border-radius:5px;
+
     ">${question}
     </p>
   

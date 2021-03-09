@@ -1,13 +1,7 @@
-function ButtonGreenUI(text="Get Started", link){
+function ButtonGreenUI(text="Get Started"){
 
 
 
-
-    handleClick = () => {
-
-        window.location.href = link
-
-    }
 
 
     return `<div onclick="handleClick()" class="button" style='
