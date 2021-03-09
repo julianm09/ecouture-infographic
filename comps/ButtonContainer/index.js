@@ -13,6 +13,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
             <div style='
             display: flex;
             flex: 1; 
+            
             flex-direction: column;
             justify-content: space-between;'>
 
@@ -26,6 +27,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: flex-end;
                 flex-direction: column;
+                transition: 1s ease;
                 
                 
                 '
@@ -54,6 +56,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: flex-end;
                 flex-direction: column;
+                transition: 1s ease;
                 '
                 
                 id="animal"
@@ -76,6 +79,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 justify-content: space-between;
                 align-items: flex-end;
                 flex-direction: column;
+                
                 '>
 
                 <div style='
@@ -87,7 +91,9 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                flex-direction: column;'
+                flex-direction: column;
+                transition: 1s ease;
+                '
                 
                 id="plant"
                 onclick="window.location = '../pages/${plantPage}.html';"
@@ -111,6 +117,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 align-items: center;
                 justify-content: flex-end;
                 flex-direction: column;
+                transition: 1s ease;
            
                 '
 
