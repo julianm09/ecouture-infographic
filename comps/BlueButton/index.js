@@ -11,19 +11,20 @@ function BlueButtonUI(text="Continue", link="../index.html"){
     <div 
     onclick="handleClick()"
     style="
-    cursor:pointer;
+
+
     color: white;
     background-color: #3884FF;
     height:50px;
+    margin-top: 10px;
     border-radius: 12px;
-    box-shadow: 4px 4px 10px grey;
+    box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346); 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight 700;
-    width:80vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    width: 80vw;
 
     ">
     ${text}

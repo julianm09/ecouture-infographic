@@ -53,10 +53,12 @@ wrong = (el) => {
 
 
 
-
+completedState.lastLocation = completed;
 completedState[completed] = true 
 localStorage.setItem("completedLevels", JSON.stringify(completedState));
 window.location.href = wrongPath;
+
+
 }
 
 
@@ -107,7 +109,6 @@ window.location.href = wrongPath;
     color: white;
     background-color: #3884FF;
     height:50px;
-    
     margin-top: 10px;
     border-radius: 12px;
     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346); 
@@ -129,7 +130,7 @@ window.location.href = wrongPath;
     color: white;
     background-color: #3884FF;
     height:50px;
-  width:100%;
+    width:100%;
     margin-top: 20px;
     border-radius: 12px;
     box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.367) , -4px -4px 4px rgba(255, 255, 255, 0.346);;
