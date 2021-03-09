@@ -42,7 +42,8 @@ if (completedState.lastLocation == "cotton") {
 
   document.querySelector(".bottle").innerHTML += SheepIcon();
   document.querySelector(".description").innerHTML += WhiteTextUI(
-    'Modern day sorting methods remove the need to dye recycled wools, reducing water and chemical usage drastically.'  );
+    "Modern day sorting methods remove the need to dye recycled wools, reducing water and chemical usage drastically."
+  );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
     "Sorry wash is the wrong answer!"
   );
@@ -51,7 +52,8 @@ if (completedState.lastLocation == "cotton") {
 
   document.querySelector(".bottle").innerHTML += WaterResist();
   document.querySelector(".description").innerHTML += WhiteTextUI(
-    'Polyester is a synthetic fiber derived from petroleum, a nonrenewable fossil fuel.'  );
+    "Polyester is a synthetic fiber derived from petroleum, a nonrenewable fossil fuel."
+  );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
     "Sorry natural is the wrong answer!"
   );

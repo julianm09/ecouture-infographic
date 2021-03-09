@@ -3,24 +3,18 @@ body {
   overflow-x: hidden;
 }
 
-.content{
-  
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.anim-para{
-
+.anim-para {
   animation: 0.5s ease-in-out forwards;
   position: relative;
   top: 100px;
   width: 80vw;
- 
-
 }
-
-
 
 .animation-container {
   width: 100vw;
@@ -33,14 +27,13 @@ body {
   top: -10vh;
   flex-direction: row;
   z-index: -100;
-
 }
 
-.content-container{
-  display:flex; 
-  align-items:center; 
-  justify-content: center; 
-  flex-direction:column;
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .animation {
@@ -53,9 +46,6 @@ body {
   align-items: center;
   flex-direction: column;
   top: 100px;
-
- 
-  
 }
 
 .scroll-container {
@@ -65,23 +55,19 @@ body {
   flex-direction: column;
 }
 
-.question{
+.question {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
-.header{
- 
+.header {
   display: flex;
   justify-content: center;
   z-index: 300;
-
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -89,54 +75,36 @@ body {
   position: relative;
   width: 80vw;
   position: absolute;
-
-  
-
 }
 
-.logo-in{
+.logo-in {
   position: absolute;
   left: 20px;
   top: 56px;
-  
-
-
 }
 
-.logo-out{
+.logo-out {
   position: absolute;
   animation: 5s rotate infinite linear;
-  
-  top: 36px;
 
+  top: 36px;
 }
 
 @keyframes rotate {
-
   from {
     transform: rotate(0);
-    
   }
   to {
     transform: rotate(-360deg);
- 
   }
-
-
-
-
 }
-
-
 
 @keyframes animate1 {
   from {
     transform: translateX(-100vw);
-    
   }
   to {
     transform: translateX(0vw);
- 
   }
 }
 
@@ -148,8 +116,6 @@ body {
     transform: translateX(0vw);
   }
 }
-
-
 
 @keyframes animate3 {
   from {
@@ -188,70 +154,53 @@ body {
 }
 
 @media (min-width: 1000px) {
-
-
-
-  .logo{
-    width:60vw;
+  .logo {
+    width: 60vw;
     z-index: 300;
   }
-  
-  .question-button-container{
+
+  .question-button-container {
     flex-direction: row;
     max-width: 60vw;
- 
-  
+  }
+
+  .anim-para {
+    width: 30vw;
+
+    position: relative;
+    top: -5vh;
+  }
+
+  .animation-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -10vh;
+    flex-direction: row;
+    z-index: -100;
+  }
+
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  .animation {
+    animation: 0.5s ease-in-out forwards;
+    position: relative;
+    transform: translateX(-100vw);
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    flex-direction: row-reverse;
+  }
 }
-
-.anim-para{
-  width: 30vw;
-
-  position: relative;
-  top: -5vh;
-}
-
-
-.animation-container {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -10vh;
-  flex-direction: row;
-  z-index: -100;
-
-  
-
-}
-
-.content-container{
-  display:flex; 
-  align-items:center; 
-  justify-content: center; 
-  flex-direction:row;
-  width: 100vw;
-
-  
-}
-
-.animation {
-  animation: 0.5s ease-in-out forwards;
-  position: relative;
-  transform: translateX(-100vw);
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-width: 60vw;
-flex-direction: row-reverse;
-
-
-
-}
-
-}
-
-

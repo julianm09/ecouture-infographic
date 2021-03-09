@@ -1,10 +1,5 @@
-function ButtonGreenUI(text="Get Started"){
-
-
-
-
-
-    return `<div onclick="handleClick()" class="button" style='
+function ButtonGreenUI(text = "Get Started") {
+  return `<div onclick="handleClick()" class="button" style='
     background-color:#51B27E;
     min-height:100px;
     min-width:300px;
@@ -17,13 +12,12 @@ function ButtonGreenUI(text="Get Started"){
     font-family: Montserrat Alternates, sans-serif;
     box-shadow:4px 4px 10px grey;
     transition: 0.1s ease;
-
     &:hover{
         color:red
     }
     '>
     ${text}
-    </div>`
+    </div>`;
 }
 
 /*  export const ButtonGreen = ButtonGreenUI();  */

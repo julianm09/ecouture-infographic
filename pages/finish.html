@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      property="og:url"
+      content="https://taigomayes.github.io/ecouture-infographic/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ecouture Infographic" />
+    <meta property="og:description" content="Help save the world!" />
+    <meta
+      property="og:image"
+      content="https://taigomayes.github.io/ecouture-infographic/comps/Resources/earth.png"
+    />
 
-    <meta property="og:url"           content="https://taigomayes.github.io/ecouture-infographic/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Ecouture Infographic" />
-    <meta property="og:description"   content="Help save the world!" />
-    <meta property="og:image"         content="https://taigomayes.github.io/ecouture-infographic/comps/Resources/earth.png" />
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <link rel=" stylesheet" href="finish.css">
+    <link rel=" stylesheet" href="finish.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="main">
-        <div id="row1">
-            
-        </div>
+      <div id="row1"></div>
 
-        <div id="row2">
-            <img id="logo" src="../comps/Resources/earth.gif">
-        </div>
+      <div id="row2">
+        <img id="logo" src="../comps/Resources/earth.gif" />
+      </div>
 
-    
+      <div id="row3">
+        <p class="blue-text">You saved the world!</p>
 
-        <div id="row3">
-            <p class="blue-text"> You saved the world!</p>
-            
+        <div id="icons">
+          <p id="challenge">Challenge your friends!</p>
 
-            <div id="icons">
-
-                <p id="challenge">Challenge your friends!</p>
-
-
-                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftaigomayes.github.io%2Fecouture-infographic%2Findex.html&layout=button&size=large&appId=720216182093956&width=77&height=28" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-<!--                 <a href="https://www.facebook.com">
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftaigomayes.github.io%2Fecouture-infographic%2Findex.html&layout=button&size=large&appId=720216182093956&width=77&height=28"
+            width="77"
+            height="28"
+            style="border: none; overflow: hidden;"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <!--                 <a href="https://www.facebook.com">
                     <i data-feather="facebook" class="socialmedia">
                         
                     </i>
@@ -56,38 +64,34 @@
                
                     <i data-feather="twitter" class="socialmedia"></i>
                 </a> -->
-
-            </div>
         </div>
+      </div>
 
-        <div id="row4">
-   
-        </div>
+      <div id="row4"></div>
     </div>
 
     <script type="module" src="./finish.js"></script>
 
     <script>
-        feather.replace()
+      feather.replace();
     </script>
-
-
-
 
     <script src="../comps/ShareContainer/index.js"></script>
     <script src="../comps/BlueButton/index.js"></script>
     <script src="../comps/Logo/index.js"></script>
 
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
- 
-</body>
-
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </body>
 </html>

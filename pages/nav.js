@@ -94,7 +94,10 @@ const InitialState = () => {
 
 // });
 
-document.querySelector("#earth").innerHTML += Progress(completedState, '../comps/Resources/earth.png');
+document.querySelector("#earth").innerHTML += Progress(
+  completedState,
+  "../comps/Resources/earth.png"
+);
 
 console.log(completedState);
 

@@ -1,401 +1,314 @@
-body{
-margin: 0;
-overflow-x: hidden;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-height: 100vh;
-width: 100vw;
-
+body {
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
 strong {
-color: #3884FF;
-font-weight: 800;
+  color: #3884ff;
+  font-weight: 800;
 }
 
-.sorry{
-    margin-top: 5vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.sorry {
+  margin-top: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.bottle{
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-    align-items: center;
-    
-
-
+.bottle {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  align-items: center;
 }
 
-#box{
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    align-items: center;
-    
-
+#box {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  align-items: center;
 }
 
-.description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    height: 40vh;
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  height: 40vh;
 }
 
-.continue{
+.continue {
+  justify-content: center;
 
-    justify-content: center;
-    
-   
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
 
-    bottom: 0;
-
+  bottom: 0;
 }
 
-#liquid{
-    animation: 4s ease-in-out drain infinite;
-    transition: 1s ease;
+#liquid {
+  animation: 4s ease-in-out drain infinite;
+  transition: 1s ease;
 }
 
 @keyframes drain {
+  0% {
+    transform: skewY(0.3);
+    opacity: 1;
+  }
 
-
-
-    0%{
-
-      transform: skewY(0.3);
-        opacity: 1;
-   
-  
-    }
-  
-  50%{
+  50% {
     opacity: 0;
-
-  }
-  
-    100%{
-  
-
-      transform: skewY(1);
-      opacity: 100;
-  
-  
-      }
-  
   }
 
-
-  /* Sheep Animation */
-
-#sheepBody{
-
-    animation: 3s ease-in-out sheepBody infinite;
-    transition: 1s eas;
-    position: relative;
-    transform-origin: bottom;
-  
+  100% {
+    transform: skewY(1);
+    opacity: 100;
   }
-  
-  #head, #R-eye, #L-eye, #mouth{
-    animation: 2s headTilt infinite;
-    transition: 1s;
-    position: relative;
-  }
-  
-  #leg1, #leg2, #leg3, #leg4{
-    animation: 2s ease-in-out sheepLegs infinite;
-    transition: 1s eas;
-    position: relative;
-    transform-origin: bottom;
-  }
-  
-  #fart{
-    position: relative;
-
-  }
-  
-  #gas{
-    animation: 3s ease-out gassy infinite;
-    position: relative;
-    transform-origin: center;
-  }
-  
-  @keyframes gassy{
-    0%{
-      transform: scale(0,0)
-    }
-  
-    50%{
-      transform: scale(1,1);
-    }
-    100%{
-      transform: scale(0,0);
-    }
-  }
-  @keyframes headTilt{
-    0%{
-  
-      transform: rotate(0deg);
-  
-    }
-    50%{
-      transform: rotate(-10deg);
-    }
-  
-    100%{
-      transform: rotate(0deg);
-    }
-  
-  }
-  @keyframes sheepBody {
-  
-  
-  
-    0%{
-      stroke-dasharray: 500;
-      stroke-dashoffset: 1000;
-  
-      fill: #E67C20;
-  
-    }
-  
-    50%{
-  
-      stroke-dasharray: 200;
-      stroke-dashoffset: 1000;
-  
-      fill: #E67C20;
-    }
-  
-  
-  
-    100%{
-  
-      stroke-dasharray: 500;
-      stroke-dashoffset: 1000;
-  
-  
-      fill: #E67C20;
-  
-      }
-  
-  }
-  
-  @keyframes sheepLegs{
-    0%{
-      opacity: 1;
-    }
-  
-    50%{
-      opacity: 0.5;
-    }
-  
-    100%{
-      opacity:1;
-    }
-  }
-
-
-/*Jeans Animations*/
-
-#jeans-anim{
-
-    animation: 5s ease-in-out jeans infinite;
-    transition: 1s eas;
-    position: relative;
-    transform-origin: bottom;
-
-    
-
-
 }
 
-@keyframes jeans {
+/* Sheep Animation */
 
+#sheepBody {
+  animation: 3s ease-in-out sheepBody infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
 
+#head,
+#R-eye,
+#L-eye,
+#mouth {
+  animation: 2s headTilt infinite;
+  transition: 1s;
+  position: relative;
+}
 
-  0%{
+#leg1,
+#leg2,
+#leg3,
+#leg4 {
+  animation: 2s ease-in-out sheepLegs infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
+
+#fart {
+  position: relative;
+}
+
+#gas {
+  animation: 3s ease-out gassy infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+@keyframes gassy {
+  0% {
+    transform: scale(0, 0);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+@keyframes headTilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes sheepBody {
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-    fill: #3884FF;
-
-    
-
+    fill: #e67c20;
   }
 
-  50%{
-
+  50% {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
 
-
-    fill: transparent;
-  
-
+    fill: #e67c20;
   }
 
-
-
-  100%{
-
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-
-    fill: #3884FF;
-      
-
-    
-
-      
-  
-    }
-  
+    fill: #e67c20;
+  }
 }
 
+@keyframes sheepLegs {
+  0% {
+    opacity: 1;
+  }
 
+  50% {
+    opacity: 0.5;
+  }
 
-#bamboo-anim{
+  100% {
+    opacity: 1;
+  }
+}
 
-    animation: 10s ease-in-out bamboo infinite;
-    transition: 1s ease;
+/*Jeans Animations*/
 
+#jeans-anim {
+  animation: 5s ease-in-out jeans infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
+}
 
+@keyframes jeans {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+    fill: #3884ff;
+  }
+
+  50% {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+
+    fill: #3884ff;
+  }
+}
+
+#bamboo-anim {
+  animation: 10s ease-in-out bamboo infinite;
+  transition: 1s ease;
 }
 
 @keyframes bamboo {
-
-
-
-  0%{
-
+  0% {
     stroke-dasharray: 100;
     stroke-dashoffset: 1000;
-  
-
   }
 
-
-  50%{
-
+  50% {
     stroke-dasharray: 100;
 
     stroke-dashoffset: 500;
-
   }
 
-
- 
-
-  100%{
-
+  100% {
     stroke-dasharray: 100;
     stroke-dashoffset: 1000;
-    
-  
-    }
-  
+  }
+}
+
+#water-resist-anim {
+  animation: 2s ease-in-out water-resist infinite;
+  transition: 1s ease;
+}
+@keyframes water-resist {
+  0% {
+    transform: translatex(100px);
+  }
+
+  50% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 0;
+  }
+}
+
+#water-resist-anim-2 {
+  animation: 2s ease-in-out water-resist-2 infinite;
+  transition: 2s ease;
+}
+
+@keyframes water-resist-2 {
+  0% {
+    transform: translatex(-100px);
+  }
+
+  50% {
+    transform: translateY(0px);
+    opacity: 100;
+  }
+
+  80% {
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 0;
+  }
 }
 
 
-#water-resist-anim{
 
-    animation: 2s ease-in-out water-resist infinite;
-    transition: 1s ease;
-  
-  
-  
-  }
-  @keyframes water-resist {
-  
-  
-  
-    0%{
-  
-      transform: translatex(100px);
-      
-  
-  
-    }
-  
-    50%{
-  
-      transform: translateY(0px);
-      opacity: 100;
-  
-    }
-  
-  
-   
-  
-    100%{
-  
-      transform: translate(0px);
-      opacity: 0;
-  
-        
-        
-    
-      }
-    
-  }
-  
+/* Sheep Icon Animation */
 
-  #water-resist-anim-2{
-  
-    animation: 2s ease-in-out water-resist-2 infinite;
-    transition: 2s ease;
-  
-  
-  
+#border {
+  animation: 10s spin linear infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+#icon {
+  animation: 2s fillIcon ease-in-out infinite;
+  position: relative;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes water-resist-2 {
-  
-  
-  
-    0%{
-  
-      transform: translatex(-100px);
-      
-  
-    }
-  
-    50%{
-  
-      transform: translateY(0px);
-      opacity: 100;
-    }
-  
-  
-    80%{
-     
-    }
-   
-  
-    100%{
-  
-      transform: translate(0px);
-      opacity: 0;
-    
-  
-      }
-  
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+@keyframes fillIcon {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #e67c20;
+  }
+
+  100% {
+    fill: white;
+  }
+}

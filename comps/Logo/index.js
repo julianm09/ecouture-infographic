@@ -1,16 +1,11 @@
 const Logo = (earth) => {
-    return `
+  return `
 
     <div
     style="
-   
     position: relative
-    
-
-    
     "
     >
-
     <img
     style="
     width:25px;
@@ -30,5 +25,5 @@ const Logo = (earth) => {
     
     
     
-    `
-}
+    `;
+};

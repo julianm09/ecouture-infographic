@@ -1,5 +1,5 @@
-function WhiteTextUI(text, height="150"){
-    return `<div style='
+function WhiteTextUI(text, height = "150") {
+  return `<div style='
     font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
     color:#ffffff;
@@ -11,10 +11,7 @@ function WhiteTextUI(text, height="150"){
     
     text-align:center;'>
     ${text}
-    </div>`
+    </div>`;
 }
-
-
-
 
 //export const BlueText = BlueTextUI()

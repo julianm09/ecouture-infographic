@@ -1,20 +1,14 @@
-function BlueTextUI(text, height="150"){
-    return `<div style='
+function BlueTextUI(text, height = "150") {
+  return `<div style='
     font-size:18px;
     font-family: Open Sans, sans-serif;
     color:#3884FF;
     display: inline-flex;
     min-height:${height}px;
     max-width:300px;
-
-
-    
     text-align:center;'>
     ${text}
-    </div>`
+    </div>`;
 }
-
-
-
 
 //export const BlueText = BlueTextUI()

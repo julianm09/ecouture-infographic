@@ -1,322 +1,276 @@
 body {
   margin: 0;
-  background: #E67C20;
+  background: #e67c20;
   overflow-x: hidden;
-
 }
 
 strong {
-  color: #3884FF;
+  color: #3884ff;
   font-weight: 800;
 }
 
-
-
 /* Bottle Animation */
 
-#bottle-anim{
-
-    animation: 6s ease-in-out bottle infinite;
-    transition: 1s;
-    position: relative;
-    transform-origin: bottom;
-
-
+#bottle-anim {
+  animation: 6s ease-in-out bottle infinite;
+  transition: 1s;
+  position: relative;
+  transform-origin: bottom;
 }
 
 @keyframes bottle {
-
-
-
-  0%{
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
     transform: scaleY(0.3);
 
-    fill: #3884FF;
-
+    fill: #3884ff;
   }
 
-  50%{
-
+  50% {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
     transform: scaleY(1);
 
-
-    fill: 3884FF;
-
-
+    fill: 3884ff;
   }
 
-
-
-  100%{
-
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
     transform: scaleY(0.3);
 
-    fill: #3884FF;
-
-
-
-    }
-
+    fill: #3884ff;
+  }
 }
 /* Sheep Animation */
 
-#sheepBody{
-
+#sheepBody {
   animation: 3s ease-in-out sheepBody infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
-
 }
 
-#head, #R-eye, #L-eye, #mouth{
+#head,
+#R-eye,
+#L-eye,
+#mouth {
   animation: 2s headTilt infinite;
   transition: 1s;
   position: relative;
 }
 
-#leg1, #leg2, #leg3, #leg4{
+#leg1,
+#leg2,
+#leg3,
+#leg4 {
   animation: 2s ease-in-out sheepLegs infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
 }
 
-#fart{
+#fart {
   position: relative;
   left: 100px;
   bottom: 150px;
 }
 
-#gas{
+#gas {
   animation: 3s ease-out gassy infinite;
   position: relative;
   transform-origin: center;
 }
 
-@keyframes gassy{
-  0%{
-    transform: scale(0,0)
+@keyframes gassy {
+  0% {
+    transform: scale(0, 0);
   }
 
-  50%{
-    transform: scale(1,1);
+  50% {
+    transform: scale(1, 1);
   }
-  100%{
-    transform: scale(0,0);
+  100% {
+    transform: scale(0, 0);
   }
 }
-@keyframes headTilt{
-  0%{
-
+@keyframes headTilt {
+  0% {
     transform: rotate(0deg);
-
   }
-  50%{
+  50% {
     transform: rotate(-10deg);
   }
 
-  100%{
+  100% {
     transform: rotate(0deg);
   }
-
 }
 @keyframes sheepBody {
-
-
-
-  0%{
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-    fill: #E67C20;
-
+    fill: #e67c20;
   }
 
-  50%{
-
+  50% {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
 
-    fill: #E67C20;
+    fill: #e67c20;
   }
 
-
-
-  100%{
-
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-    fill: #E67C20;
-
-    }
-
+    fill: #e67c20;
+  }
 }
 
-@keyframes sheepLegs{
-  0%{
+@keyframes sheepLegs {
+  0% {
     opacity: 1;
   }
 
-  50%{
+  50% {
     opacity: 0.5;
   }
 
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
   }
 }
 
 /* Tree Animation */
-#leafy{
+#leafy {
   animation: 5s ease-in-out leafy infinite;
   position: relative;
   transform-origin: center;
 }
 
-#stem{
-
+#stem {
   animation: 5s ease-in-out stem infinite;
   position: relative;
   transform-origin: bottom;
-
 }
 
-@keyframes leafy{
-  0%{
-    transform: scale(0.5,0.5);
-    fill: #E67C20;
+@keyframes leafy {
+  0% {
+    transform: scale(0.5, 0.5);
+    fill: #e67c20;
   }
-  50%{
-    transform: scale(1,1);
-    fill: #51B27E;
+  50% {
+    transform: scale(1, 1);
+    fill: #51b27e;
   }
-  100%{
-    transform: scale(0.5,0.5);
-    fill: #E67C20;
+  100% {
+    transform: scale(0.5, 0.5);
+    fill: #e67c20;
   }
 }
 
 @keyframes stem {
-
-
-
-  0%{
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
     fill: #654321;
-
   }
 
-  50%{
-
+  50% {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
 
     fill: #654321;
   }
 
-
-
-  100%{
-
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
     fill: #654321;
-
-    }
-
+  }
 }
 
 /* Water Drops Animation */
 
-.droplet{
+.droplet {
   animation: 4s ease-in-out droplet infinite;
   position: absolute;
   transform-origin: center;
 }
 
-#drop5{
+#drop5 {
   display: block;
   animation: none;
 }
 
-@keyframes droplet{
-
-  0%{
-    transform: scale(0,0)
+@keyframes droplet {
+  0% {
+    transform: scale(0, 0);
   }
 
-  50%{
-    transform: scale(1,1);
+  50% {
+    transform: scale(1, 1);
   }
-  100%{
-    transform: scale(0,0);
+  100% {
+    transform: scale(0, 0);
   }
 }
 
 /* Sheep Icon Animation */
 
-#border{
+#border {
   animation: 10s spin linear infinite;
   position: relative;
   transform-origin: center;
 }
 
-#icon{
+#icon {
   animation: 2s fillIcon ease-in-out infinite;
   position: relative;
   transform-origin: center;
 }
 
-@keyframes spin{
-  0%{
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes fillIcon{
-  0%{
+@keyframes fillIcon {
+  0% {
     fill: white;
   }
 
-  50%{
-    fill: #E67C20;
+  50% {
+    fill: #e67c20;
   }
 
-  100%{
+  100% {
     fill: white;
   }
 }
 
 /* Earth 5 Percent Animation */
 
-#fivePer{
+#fivePer {
   animation: 5s ease-in-out five infinite;
   position: relative;
   transform-origin: bottom;
 }
 
-@keyframes five{
-  0%{
-    transform: scale(1.1,1.1)
-    );
+@keyframes five {
+  0% {
+    transform: scale(1.1, 1.1);
   }
-  50%{
-    transform: scale(0,0);
+  50% {
+    transform: scale(0, 0);
   }
-
 }

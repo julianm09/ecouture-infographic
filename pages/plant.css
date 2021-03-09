@@ -1,65 +1,43 @@
 body {
   margin: 0;
-  background: #51B27E;
-
+  background: #51b27e;
 }
 
 strong {
-  color: #3884FF;
+  color: #3884ff;
   font-weight: 800;
 }
 
-
-
-#bamboo-anim{
-
-    animation: 10s ease-in-out bamboo infinite;
-    transition: 1s ease;
-
-
+#bamboo-anim {
+  animation: 10s ease-in-out bamboo infinite;
+  transition: 1s ease;
 }
 
 @keyframes bamboo {
-
-
-
-  0%{
-
+  0% {
     stroke-dasharray: 100;
     stroke-dashoffset: 1000;
-  
-
   }
 
-
-  50%{
-
+  50% {
     stroke-dasharray: 100;
 
     stroke-dashoffset: 500;
-
   }
 
-
- 
-
-  100%{
-
+  100% {
     stroke-dasharray: 100;
     stroke-dashoffset: 1000;
-    
-  
-    }
-  
+  }
 }
 
-#skull1{
+#skull1 {
   animation: skull1 3s ease-in-out infinite;
-
 }
 
 @keyframes skull1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-100);
   }
   50% {
@@ -67,12 +45,13 @@ strong {
   }
 }
 
-#skull2{
+#skull2 {
   animation: skull2 2.5s ease-in-out infinite;
 }
 
 @keyframes skull2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -80,12 +59,13 @@ strong {
   }
 }
 
-#skullone{
+#skullone {
   animation: skullone 4.5s ease-in-out infinite;
 }
 
-@keyframes skullone{
-  0%, 100% {
+@keyframes skullone {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -93,12 +73,13 @@ strong {
   }
 }
 
-#skulltwo{
+#skulltwo {
   animation: skulltwo 3s ease-in-out infinite;
 }
 
-@keyframes skulltwo{
-  0%, 100% {
+@keyframes skulltwo {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -106,12 +87,13 @@ strong {
   }
 }
 
-#skullthree{
+#skullthree {
   animation: skullthree 3.5s ease-in-out infinite;
 }
 
-@keyframes skullthree{
-  0%, 100% {
+@keyframes skullthree {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -119,12 +101,13 @@ strong {
   }
 }
 
-#skullfour{
+#skullfour {
   animation: skullfour 5s ease-in-out infinite;
 }
 
-@keyframes skullfour{
-  0%, 100% {
+@keyframes skullfour {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -132,12 +115,13 @@ strong {
   }
 }
 
-#waves{
+#waves {
   animation: 5s waves ease-in-out infinite;
 }
 
-@keyframes waves{
-  0%, 100% {
+@keyframes waves {
+  0%,
+  100% {
     transform: translateX(15px);
   }
   50% {
@@ -145,12 +129,13 @@ strong {
   }
 }
 
-#waves2{
+#waves2 {
   animation: 5s waves2 ease-in-out infinite;
 }
 
-@keyframes waves2{
-  0%, 100% {
+@keyframes waves2 {
+  0%,
+  100% {
     transform: translateX(-15px);
   }
   50% {
@@ -158,103 +143,99 @@ strong {
   }
 }
 
-#arrow1{
+#arrow1 {
   animation: 5s arrow1 ease-in-out infinite;
-
 }
 
-@keyframes arrow1{
-0%, 100%{
-  opacity: 0;
+@keyframes arrow1 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
-50%{
-  opacity: 1;
-}
-  
-
-}
-
-#arrow2{
+#arrow2 {
   animation: 5s arrow1 ease-in-out infinite;
   animation-delay: 1s;
 }
 
-@keyframes arrow2{
-  0%, 100%{
+@keyframes arrow2 {
+  0%,
+  100% {
     opacity: 0;
   }
-  
-  50%{
+
+  50% {
     opacity: 1;
   }
 }
 
-#arrow3{
+#arrow3 {
   animation: 5s arrow1 ease-in-out infinite;
   animation-delay: 2s;
 }
 
-@keyframes arrow3{
-  0%, 100%{
+@keyframes arrow3 {
+  0%,
+  100% {
     opacity: 0;
   }
-  
-  50%{
+
+  50% {
     opacity: 1;
   }
 }
 
-#water{
+#water {
   animation: 8s water ease-in-out infinite;
   transition: 1s;
   position: relative;
   transform-origin: bottom;
 }
 
-@keyframes water{
-  0%,100%{
-    transform: scaleY(0.8)
+@keyframes water {
+  0%,
+  100% {
+    transform: scaleY(0.8);
   }
 
-  50%{
+  50% {
     transform: scaleY(2.8);
   }
 }
 
-#percentage{
+#percentage {
   animation: 3s percentage ease-in-out infinite;
 }
 
-@keyframes percentage{
-  0%,100%{
+@keyframes percentage {
+  0%,
+  100% {
     transform: translateX(-12px);
   }
-  50%{
+  50% {
     transform: translateX(12px);
   }
 }
 
-#flax-anim{
-
+#flax-anim {
   animation: 3s flax ease-in-out infinite;
-
 }
 
-#flax-leaf-anim{
-
+#flax-leaf-anim {
   animation: 3s flax-leaf ease-in-out infinite;
-
 }
 
-@keyframes flax{
-  0%,100%{
+@keyframes flax {
+  0%,
+  100% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(70px);
   }
 }
-
-
-

@@ -1,330 +1,295 @@
 body {
   margin: 0;
-  background: #36B9C5;
+  background: #36b9c5;
   overflow-x: hidden;
-
 }
 
 strong {
-  color: #3884FF;
+  color: #3884ff;
   font-weight: 800;
 }
 
 .white {
-  color:white;
+  color: white;
 }
 
 /*Jeans Animations*/
 
-#jeans-anim{
-
-    animation: 5s ease-in-out jeans infinite;
-    transition: 1s eas;
-    position: relative;
-    transform-origin: bottom;
-
-    
-
-
+#jeans-anim {
+  animation: 5s ease-in-out jeans infinite;
+  transition: 1s eas;
+  position: relative;
+  transform-origin: bottom;
 }
 
 @keyframes jeans {
-
-
-
-  0%{
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-    fill: #3884FF;
-
-    
-
+    fill: #3884ff;
   }
 
-  50%{
-
+  50% {
     stroke-dasharray: 200;
     stroke-dashoffset: 1000;
 
-
     fill: transparent;
-  
-
   }
 
-
-
-  100%{
-
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
 
-
-
-    fill: #3884FF;
-      
-
-    
-
-      
-  
-    }
-  
+    fill: #3884ff;
+  }
 }
 
 /*Pesticide Animations*/
-#all{
+#all {
   animation: rotation 2s infinite linear;
 }
 
 @keyframes rotation {
-  from{
-   transform: rotate(0deg);
-
+  from {
+    transform: rotate(0deg);
   }
-  50%{
-  transform: rotate(30deg);
+  50% {
+    transform: rotate(30deg);
   }
-  to{
+  to {
     transform: rotate(0deg);
   }
 }
 
-
-
-#can{
-
+#can {
   animation: 5s ease-in-out Pesticide infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
 }
 
-@keyframes  Pesticide{
-
-0%{
-  stroke-dasharray: 500;
-  stroke-dashoffset: 1000;
-  fill: #51B27E;
-}
-
-50%{
-  stroke-dasharray: 200;
-  stroke-dashoffset: 1000;
-  fill: transparent;
-}
-
-100%{
-  stroke-dasharray: 500;
-  stroke-dashoffset: 1000;
-  fill: #51B27E;
+@keyframes Pesticide {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    fill: #51b27e;
   }
 
+  50% {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    fill: #51b27e;
+  }
 }
 
-.spray{
-
+.spray {
   animation: 5s ease-in-out Pesticide infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
-
-  
-
-
 }
 
 /*Waves Animations*/
 
-#waves{
+#waves {
   animation: wavesrotation 5s infinite linear;
   transition: 1s eas;
 }
 
 @keyframes wavesrotation {
-  from{
+  from {
     transform: rotate(10deg);
   }
-  50%{
+  50% {
     transform: rotate(-10deg);
   }
-  to{
+  to {
     transform: rotate(10deg);
   }
 }
 
-
-
-
-#four{
-  animation: 3s  four infinite;
-  
+#four {
+  animation: 3s four infinite;
 }
 @keyframes four {
-  0%{
+  0% {
     opacity: 100%;
   }
-  50%{
+  50% {
     opacity: 0%;
   }
-  100%{
+  100% {
     opacity: 100%;
   }
-
-
 }
 
-#three{
-  animation: 3s  four infinite;
-
+#three {
+  animation: 3s four infinite;
 }
 @keyframes three {
-  0%{
+  0% {
     opacity: 100%;
   }
-  100%{
+  100% {
     opacity: 0%;
   }
-
-
 }
 
-#two{
-  animation: 3s  four infinite;
-
+#two {
+  animation: 3s four infinite;
 }
 @keyframes two {
-  0%{
+  0% {
     opacity: 100%;
   }
-  100%{
+  100% {
     opacity: 0%;
   }
-
-
 }
 
-#one{
-  animation: 3s  four infinite;
- 
+#one {
+  animation: 3s four infinite;
 }
 @keyframes one {
-  0%{
+  0% {
     opacity: 100%;
   }
-  100%{
+  100% {
     opacity: 0%;
   }
-
-
 }
-
-
 
 /*Cotton Animations*/
 
-#bottom{
-animation: 3s ease-in-out bottom infinite;
+#bottom {
+  animation: 3s ease-in-out bottom infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: bottom;
 }
 
-@keyframes  bottom{
-0%{
-  fill: #51B27E
-}
-50%{
-  fill: transparent;
-}
-100%{
-  fill: #51B27E;
+@keyframes bottom {
+  0% {
+    fill: #51b27e;
+  }
+  50% {
+    fill: transparent;
+  }
+  100% {
+    fill: #51b27e;
   }
 }
 
-#top{
+#top {
   animation: 3s ease-in-out top infinite;
   transition: 1s eas;
   position: relative;
   transform-origin: top;
-  }
-  
-  @keyframes  top{
-  0%{
+}
+
+@keyframes top {
+  0% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
   }
-  50%{
+  50% {
     stroke-dasharray: 800;
     stroke-dashoffset: 1000;
   }
-  100%{
+  100% {
     stroke-dasharray: 500;
     stroke-dashoffset: 1000;
-    }
   }
-
-
+}
 
 /*Truck Animations*/
 
-#truckall{
+#truckall {
   animation: drive 6s linear infinite;
   position: relative;
-   }
-   @keyframes drive {
-    from{
-      left:-50px;
-    }
-    50%{
-      left:50px;
-    }
-    to{
-      left:-50px;
-    }
-   }
+}
+@keyframes drive {
+  from {
+    left: -50px;
+  }
+  50% {
+    left: 50px;
+  }
+  to {
+    left: -50px;
+  }
+}
 
-#bigpipe{
+#bigpipe {
   animation: floating 2s ease-in-out infinite;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
   }
-  @keyframes floating{
-    from {transform: translate(0, 0px);}
-    50% {transform: translate(0, 5px);}
-    to {transform: translate(0, 0px);}
+  50% {
+    transform: translate(0, 5px);
   }
+  to {
+    transform: translate(0, 0px);
+  }
+}
 
-#smallpipe{
+#smallpipe {
   animation: floating 2s ease-in-out infinite;
   animation-delay: 1s;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
   }
-  @keyframes floating{
-    from {transform: translate(0, 0px);}
-    50% {transform: translate(0, 5px);}
-    to {transform: translate(0, 0px);}
+  50% {
+    transform: translate(0, 5px);
   }
-.smoke{
+  to {
+    transform: translate(0, 0px);
+  }
+}
+.smoke {
   animation: floating 2s ease-in-out infinite;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
   }
-  @keyframes floating{
-    from {transform: translate(0, 0px);}
-    50% {transform: translate(0, 5px);}
-    to {transform: translate(0, 0px);}
+  50% {
+    transform: translate(0, 5px);
   }
+  to {
+    transform: translate(0, 0px);
+  }
+}
 
-.moresmoke{
+.moresmoke {
   position: relative;
-  right:10px;
+  right: 10px;
   animation: morefloating 2s ease-in-out infinite;
+}
+@keyframes morefloating {
+  from {
+    transform: translate(0, 0px);
   }
-  @keyframes morefloating{
-    from {transform: translate(0, 0px);}
-    50% {transform: translate(0, 10px);}
-    to {transform: translate(0, 0px);}
+  50% {
+    transform: translate(0, 10px);
   }
+  to {
+    transform: translate(0, 0px);
+  }
+}
 
-#body{
+#body {
   animation: 3s ease-in-out bottom infinite;
   animation-name: bodyfill;
   transition: 1s eas;
@@ -332,48 +297,49 @@ animation: 3s ease-in-out bottom infinite;
   transform-origin: bottom;
 }
 
-@keyframes  bodyfill{
-0%{
-  fill: transparent;
-}
+@keyframes bodyfill {
+  0% {
+    fill: transparent;
+  }
 
-
-100%{
-  fill: #af75bd;
+  100% {
+    fill: #af75bd;
   }
 }
 
-  
 /*Factory Animations*/
-.doors{
+.doors {
   animation: 4s ease-in-out infinite linear;
   animation-name: entrances;
 }
 
-@keyframes entrances{
+@keyframes entrances {
+  0% {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1000;
+  }
 
-0%{
-  stroke-dasharray: 1300;
-  stroke-dashoffset: 1000;
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+  }
 }
 
-100%{
-  stroke-dasharray: 500;
-  stroke-dashoffset: 1000;
- 
-}
-
-}
-
-  
-
-#cloud{
+#cloud {
   animation: cloudfloat 4s ease-in-out infinite;
 }
 
-@keyframes cloudfloat{
-  from {transform: translate(0, 0px); fill:transparent;}
-  50% {transform: translate(0, 5px); fill: #51B27E;}
-  to {transform: translate(0, 0px); fill:transparent;}
+@keyframes cloudfloat {
+  from {
+    transform: translate(0, 0px);
+    fill: transparent;
+  }
+  50% {
+    transform: translate(0, 5px);
+    fill: #51b27e;
+  }
+  to {
+    transform: translate(0, 0px);
+    fill: transparent;
+  }
 }
-

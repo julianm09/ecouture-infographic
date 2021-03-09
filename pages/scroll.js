@@ -1,24 +1,13 @@
 const ScrollContainer = (i, img, para) => {
-  //img param is just image name before .svg
-  console.log(img);
-
   //return animation-container animation and text
   return `
         <div id="trigger-${i}" class="animation-container">
-        <div class="content-container">
-
-        <div width="300px" height="300px" class="animation" id="anim-${i}"> 
-        ${img}
-        
-        <p class="anim-para" id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
-
-
-        </div>
-
-
-
-
-        </div>
+          <div class="content-container">
+            <div width="300px" height="300px" class="animation" id="anim-${i}"> 
+            ${img}
+            <p class="anim-para" id="anim-para-${i}"style="color:white; font-size:18px; font-family: 'Open Sans', sans-serif; margin-top:100px; text-align:left;" >${para}</p>
+            </div>
+          </div>
         </div>
         `;
 };
@@ -38,8 +27,6 @@ window.addEventListener("scroll", () => {
       .top;
 
     if (top < 300 && top > -5) {
-      console.log(top);
-
       document.getElementById(`anim-${i}`).style.animationName = `animate${i}`;
       /*       document.getElementById(`anim-${i}-2`).style.animationName = `animate${i}-2`;
       document.getElementById(`anim-para-${i}`).style.animationName = `animate${i}-3`; */
