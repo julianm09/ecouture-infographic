@@ -25,7 +25,7 @@ const gallery = [
     text: "Linen requires <strong style=color:white> 60% less water </strong> for growth in comparison to cotton. Linen also has a higher carbon absorption rate than cotton.",
   },
   {
-    img: "animation",
+    img: Flax(),
     text: "Flax can grow in poor quality soil, and in many cases has the ability to clean polluted soil. Leading to a higher rate of soil rehabilitation for each flax farm.",
   },
 ];
@@ -36,5 +36,5 @@ for (var i = 1; i < 7; i++) {
   scrollContainer.innerHTML += ScrollContainer(i, gallery[i - 1].img, gallery[i - 1].text);
 }
 
-question.innerHTML += QuestionUI("Which material is more sustainable?", "Cotton", "Recycled Cotton", "../pages/wrong.html", "../pages/nav.html", 'plant')
+question.innerHTML += QuestionUI("What harmful ingredient does bamboo not require to grow plentifully?", "Manure", "Pesticides", "../pages/wrong.html", "../pages/nav.html", 'plant')
 

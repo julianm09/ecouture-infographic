@@ -234,3 +234,27 @@ strong {
     transform: translateX(12px);
   }
 }
+
+#flax-anim{
+
+  animation: 3s flax ease-in-out infinite;
+
+}
+
+#flax-leaf-anim{
+
+  animation: 3s flax-leaf ease-in-out infinite;
+
+}
+
+@keyframes flax{
+  0%,100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(70px);
+  }
+}
+
+
+

@@ -19,7 +19,7 @@
 
 
 <body style="
-background:black;
+background:#51B27E;
 width: 100vw;
 height: 100vh;
 display: flex;
@@ -28,12 +28,17 @@ align-items: center;
 ">
 
 
-    <img src="./comps/Resources/earth.gif" alt="">
+    <img width="100px" src="./comps/Resources/earth.gif" alt="">
 
     <script>
 
         
         window.onload = () => {
+
+
+            setTimeout(function () {
+
+
 
 
             //when window loads and completed levels exist go to nav page 
@@ -48,6 +53,8 @@ align-items: center;
                 window.location.href = './pages/intro.html'
             }
 
+
+        }, 2000);
 
             
         }

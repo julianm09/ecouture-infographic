@@ -26,35 +26,33 @@ if (completedState.lastLocation == "cotton") {
     "Cotton as a material can require up to 1kg of cotton taking 20,000L to create."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
-    "Sorry cotton is the wrong answer!"
+    "Sorry oxygen is the wrong answer!"
   );
 } else if (completedState.lastLocation == "plant") {
   document.querySelector("body").style.background = "#51B27E";
   document.querySelector(".bottle").innerHTML += Bamboo();
   document.querySelector(".description").innerHTML += WhiteTextUI(
-    "The chemicals used in bamboo processing have the potential to harm the environment through water pollution."
+    "Bamboo requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
-    "Sorry bamboo is the wrong answer!"
+    "Sorry manure is the wrong answer!"
   );
 } else if (completedState.lastLocation == "animal") {
   document.querySelector("body").style.background = "#E67C20";
 
-  document.querySelector(".bottle").innerHTML += Gas();
+  document.querySelector(".bottle").innerHTML += SheepIcon();
   document.querySelector(".description").innerHTML += WhiteTextUI(
-    "Bamboo requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots."
-  );
+    'Modern day sorting methods remove the need to dye recycled wools, reducing water and chemical usage drastically.'  );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
-    "Sorry wool is the wrong answer!"
+    "Sorry wash is the wrong answer!"
   );
 } else if (completedState.lastLocation == "synthetic") {
   document.querySelector("body").style.background = "#AF75BD";
 
   document.querySelector(".bottle").innerHTML += WaterResist();
   document.querySelector(".description").innerHTML += WhiteTextUI(
-    "Bamboo requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots."
-  );
+    'Polyester is a synthetic fiber derived from petroleum, a nonrenewable fossil fuel.'  );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
-    "Sorry synthetic is the wrong answer!"
+    "Sorry natural is the wrong answer!"
   );
 }

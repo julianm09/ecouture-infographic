@@ -14,7 +14,7 @@ function ButtonGreenUI(text="Get Started"){
     align-items:center;
     color:#FFFFFF;
     font-size:18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat Alternates, sans-serif;
     box-shadow:4px 4px 10px grey;
     transition: 0.1s ease;
 
