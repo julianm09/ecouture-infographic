@@ -1,0 +1,75 @@
+html, body{
+    margin: 0; 
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#earth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+#earthContainer{
+    margin: 0px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#blueText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+#earth{
+    width: 175px;
+    height: 175px;
+}
+
+#quiz{
+    color: white;
+    background-color: #51B27E;
+    height:90px;
+    width:300px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    margin-bottom: 10vh;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greenButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
