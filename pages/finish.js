@@ -3,6 +3,6 @@ document.getElementById("row1").innerHTML += Logo(
 );
 
 let homeButton = (document.getElementById("row4").innerHTML += BlueButtonUI(
-  "Back Home",
+  "Back to Start",
   "../index.html"
 ));
