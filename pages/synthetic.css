@@ -73,6 +73,15 @@ strong {
   transition: 2s ease;
 }
 
+
+#water-resist-anim{
+
+  animation: 2s ease-in-out water-resist infinite;
+  transition: 1s ease;
+
+
+
+}
 @keyframes water-resist {
 
 

@@ -1,4 +1,4 @@
-function ErrorTextUI(text='Sorry, cotton is not a sustainable material!', size='18', textColor='#51B27E', width='180',height='66')
+function ErrorTextUI(text='Sorry, cotton is not a sustainable material!', size='18', textColor='#ffffff', width='180',height='66')
 {
     return `
 
