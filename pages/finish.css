@@ -38,10 +38,10 @@ body{
 
 @keyframes logoscale {
     0% {
-        transform: scale(.8);
+        transform: scale(1);
     }
     100% {
-        transform: scale(1.0);
+        transform: scale(1.2);
     }
 }
 
@@ -60,6 +60,7 @@ body{
 #challenge{
     color: #51B27E;
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 50px;
     
 }
 
@@ -73,7 +74,9 @@ body{
   height: 20vh;
   display: flex;
   align-items: center;
-justify-content: center;}
+justify-content: center;
+flex-direction: column;
+}
 
 .socialmedia{
     width: 4vw;
@@ -89,6 +92,14 @@ justify-content: center;}
     align-items: center;
     margin-bottom: 5vh;
 
+
+}
+
+.blue-text{
+
+    font-size:18px;
+    font-family: Open Sans, sans-serif;
+    color:#3884FF;
 
 }
 

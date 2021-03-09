@@ -2,6 +2,8 @@ document.querySelector("#blueText").innerHTML += BlueTextUI("The recent increase
 document.querySelector("#greenButton").innerHTML += ButtonGreenUI('Get Started', '../pages/nav.html')
 document.querySelector("#logo").innerHTML += Logo('../comps/Resources/earth-small.png')
 
+
+
 document.querySelector("#greenButton").addEventListener('click', () => {
 
 
