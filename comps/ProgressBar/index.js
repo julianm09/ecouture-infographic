@@ -14,7 +14,7 @@ function Progress(completedState, earth) {
       document.getElementById("topLeftEarth").style.transition = "1s ";
       document.getElementById("cotton").style.transition = "1s";
     }
-  }, 1000);
+  }, 500);
 
   setTimeout(function () {
     if (completedState.plant) {
@@ -29,7 +29,7 @@ function Progress(completedState, earth) {
       document.getElementById("topRightEarth").style.transition = "1s ";
       document.getElementById("plant").style.transition = "1s";
     }
-  }, 1000);
+  }, 500);
 
   setTimeout(function () {
     if (completedState.animal) {
@@ -44,7 +44,7 @@ function Progress(completedState, earth) {
       document.getElementById("bottomLeftEarth").style.transition = "1s ";
       document.getElementById("animal").style.transition = "1s";
     }
-  }, 1000);
+  }, 500);
 
   setTimeout(function () {
     if (completedState.synthetic) {
@@ -59,7 +59,7 @@ function Progress(completedState, earth) {
       document.getElementById("bottomRightEarth").style.transition = "1s ";
       document.getElementById("synthetic").style.transition = "1s";
     }
-  }, 1000);
+  }, 500);
 
   return `
   
