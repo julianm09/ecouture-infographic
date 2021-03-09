@@ -51,6 +51,6 @@ question.innerHTML += QuestionUI(
   "Cotton",
   "Recycled Cotton",
   "../pages/wrong.html",
-  "../index.html",
+  "../pages/nav.html",
   "animal"
 );

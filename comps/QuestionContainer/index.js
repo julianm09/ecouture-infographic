@@ -3,7 +3,7 @@ function QuestionUI(
   wrongAnswer = "Cotton",
   rightAnswer = "Recycled Cotton",
   wrongPath = "../../pages/wrong.html",
-  rightPath = "../../index.html",
+  rightPath = "../../pages/nav.html",
   completed
 ) {
 
@@ -51,10 +51,11 @@ wrong = (el) => {
 /*     window.location.href = wrongPath; */
 
 
+const lastLocation = {}
 
-
-completedState.lastLocation = completed;
-completedState[completed] = true 
+lastLocation.lastLocation = completed;
+completedState[completed] = true;
+localStorage.setItem("lastLocation", JSON.stringify(lastLocation));
 localStorage.setItem("completedLevels", JSON.stringify(completedState));
 window.location.href = wrongPath;
 

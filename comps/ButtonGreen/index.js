@@ -1,5 +1,16 @@
-function ButtonGreenUI(text="Get Started"){
-    return `<div class="button" style='
+function ButtonGreenUI(text="Get Started", link){
+
+
+
+
+    handleClick = () => {
+
+        window.location.href = link
+
+    }
+
+
+    return `<div onclick="handleClick()" class="button" style='
     background-color:#51B27E;
     min-height:100px;
     min-width:300px;
@@ -21,4 +32,4 @@ function ButtonGreenUI(text="Get Started"){
     </div>`
 }
 
- export const ButtonGreen = ButtonGreenUI(); 
+/*  export const ButtonGreen = ButtonGreenUI();  */

@@ -7,6 +7,7 @@ function Progress(completedState) {
       document.getElementById("topLeftProgress").style.opacity = "100%";
       document.getElementById("topLeftEarth").style.filter = "none";
       document.getElementById("cotton").style.background = "#36B9C5";
+      document.getElementById("cotton-para").style.color = "#ffffff";
       document.getElementById("cottonImg").src =
         "../comps/Resources/cotton-btn-white.svg";
 
@@ -21,6 +22,7 @@ function Progress(completedState) {
       document.getElementById("topRightProgress").style.opacity = "100%";
       document.getElementById("topRightEarth").style.filter = "none";
       document.getElementById("plant").style.background = "#51B27E";
+      document.getElementById("plant-para").style.color = "#ffffff";
       document.getElementById("plantImg").src =
         "../comps/Resources/plant-btn-white.svg";
 
@@ -35,6 +37,7 @@ function Progress(completedState) {
       document.getElementById("bottomLeftProgress").style.opacity = "100%";
       document.getElementById("bottomLeftEarth").style.filter = "none";
       document.getElementById("animal").style.background = "#E67C20";
+      document.getElementById("animal-para").style.color = "#ffffff";
       document.getElementById("animalImg").src =
         "../comps/Resources/animal-btn-white.svg";
 
@@ -49,6 +52,7 @@ function Progress(completedState) {
       document.getElementById("bottomRightProgress").style.opacity = "100%";
       document.getElementById("bottomRightEarth").style.filter = "none";
       document.getElementById("synthetic").style.background = "#AF75BD";
+      document.getElementById("synthetic-para").style.color = "#ffffff";
       document.getElementById("syntheticImg").src =
         "../comps/Resources/synthetic-btn-white.svg";
 

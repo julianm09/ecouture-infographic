@@ -2,7 +2,7 @@
 
 document.querySelector("#blueText").innerHTML += BlueTextUI("Choose a material to help save the world!", "0")
 
-document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("25", "25", "10", "../comps/Resources/cotton-btn.svg", "../comps/Resources/animal-btn.svg", "../comps/Resources/plant-btn.svg", "../comps/Resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
+document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("35", "35", "15", "../comps/Resources/cotton-btn.svg", "../comps/Resources/animal-btn.svg", "../comps/Resources/plant-btn.svg", "../comps/Resources/synthetic-btn.svg", 'cotton', 'animal', 'plant', 'synthetic');
 
 
 
@@ -20,7 +20,7 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("25", "25", "
 
 
     //check if all completed levels are true 
-    const completeAllLevels = Object.values(completedState).every(x => (x === true))
+    const completeAllLevels = Object.values(completedState).every(x => (x === true ))
 
 
     //if all completed levels are true clear storage and go to finish page 
@@ -40,7 +40,8 @@ document.querySelector("#buttons").innerHTML +=  ButtonContainerUI("25", "25", "
               document.getElementById("bottomRightProgress").style.fill = "#3884FF";
 
               document.getElementById("bottomLeftProgress").style.fill = "#3884FF";
-        
+
+
             
           }, 2000);
 

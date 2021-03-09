@@ -12,7 +12,7 @@ function Redirect() {
     // if completed levels exist use completed levels from local storgage 
     if(localStorage.completedLevels){
 
-    completedState = JSON.parse(localStorage.getItem("completedLevels"))
+    completedState = JSON.parse(localStorage.getItem("lastLocation"))
     } else {
 
             completedState = initialState

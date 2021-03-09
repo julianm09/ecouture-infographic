@@ -24,7 +24,11 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'
+                justify-content: flex-end;
+                flex-direction: column;
+                
+                
+                '
                 
                 id="cotton"
                 onclick="window.location = '../pages/${cottonPage}.html';"
@@ -33,7 +37,13 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 <img 
                 style="width:5vh;"
                 src='${cottonImage}' id="cottonImg">
+
+                <p id="cotton-para"  style="color: #36B9C5; font-family: Montserrat Alternates, sans-serif; ">Cotton</p>
                 </div>
+
+
+
+
                 <div style='
                 width:${innerBoxWidthHeight}vh;
                 height:${innerBoxWidthHeight}vh;
@@ -42,7 +52,9 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'
+                justify-content: flex-end;
+                flex-direction: column;
+                '
                 
                 id="animal"
                 onclick="window.location = '../pages/${animalPage}.html';"
@@ -51,6 +63,8 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 <img 
                 style="width:5vh;"
                 src='${animalImage}' id="animalImg">
+
+                <p id="animal-para" style="color:#E67C20; font-family: Montserrat Alternates, sans-serif; ">Animal</p>
 
                 </div>
 
@@ -61,6 +75,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-end;
+                flex-direction: column;
                 '>
 
                 <div style='
@@ -71,7 +86,8 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'
+                justify-content: flex-end;
+                flex-direction: column;'
                 
                 id="plant"
                 onclick="window.location = '../pages/${plantPage}.html';"
@@ -80,6 +96,8 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 <img
                 style="width:5vh;"
                 src=${plantImage} id="plantImg">
+
+                <p id="plant-para" id="plant-para" style="color:  #51B27E; font-family: Montserrat Alternates, sans-serif; ">Plant</p>
 
                 </div>
 
@@ -91,15 +109,20 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
                 display: flex;
                 align-items: center;
-                justify-content: center;'
+                justify-content: flex-end;
+                flex-direction: column;
+           
+                '
 
                 id="synthetic"
                 onclick="window.location = '../pages/${syntheticPage}.html';"
                 >
                 
                 <img
-                style="width:5vh;"
+                style="width:5vh;
+                "
                  src=${syntheticImage} id="syntheticImg">
+                 <p  id="synthetic-para" style="color: #AF75BD; font-family: Montserrat Alternates, sans-serif; ">Synthetic</p>
                 
                 </div>
             </div>
