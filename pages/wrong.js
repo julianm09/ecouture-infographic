@@ -22,7 +22,7 @@ console.log(completedState);
 if (completedState.lastLocation == "cotton") {
   document.querySelector("body").style.background = "#36B9C5";
   document.querySelector(".bottle").innerHTML += Jeans();
-  document.querySelector(".description").innerHTML += BlueTextUI(
+  document.querySelector(".description").innerHTML += WhiteTextUI(
     "Cotton as a material can require up to 1kg of cotton taking 20,000L to create."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
@@ -31,7 +31,7 @@ if (completedState.lastLocation == "cotton") {
 } else if (completedState.lastLocation == "plant") {
   document.querySelector("body").style.background = "#51B27E";
   document.querySelector(".bottle").innerHTML += Bamboo();
-  document.querySelector(".description").innerHTML += BlueTextUI(
+  document.querySelector(".description").innerHTML += WhiteTextUI(
     "The chemicals used in bamboo processing have the potential to harm the environment through water pollution."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
@@ -41,7 +41,7 @@ if (completedState.lastLocation == "cotton") {
   document.querySelector("body").style.background = "#E67C20";
 
   document.querySelector(".bottle").innerHTML += Gas();
-  document.querySelector(".description").innerHTML += BlueTextUI(
+  document.querySelector(".description").innerHTML += WhiteTextUI(
     "Bamboo requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
@@ -51,7 +51,7 @@ if (completedState.lastLocation == "cotton") {
   document.querySelector("body").style.background = "#AF75BD";
 
   document.querySelector(".bottle").innerHTML += WaterResist();
-  document.querySelector(".description").innerHTML += BlueTextUI(
+  document.querySelector(".description").innerHTML += WhiteTextUI(
     "Bamboo requires no need for pesticides or fertilizers. Its growth rate requires no need for replanting as new plants grow from the previous bamboos roots."
   );
   document.querySelector(".sorry").innerHTML += ErrorTextUI(
