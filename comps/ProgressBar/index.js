@@ -1,4 +1,4 @@
-function Progress(completedState) {
+function Progress(completedState, earth) {
   console.log(completedState);
 
   setTimeout(function () {
@@ -75,7 +75,7 @@ function Progress(completedState) {
   position: absolute;
   width: 20vh;
   filter: grayscale(100);
-"src='../Comps/Resources/earth.png'>
+"src='${earth}'>
 
 
   <div
