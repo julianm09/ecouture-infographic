@@ -1,7 +1,17 @@
-function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBoxWidthHeight='200', cottonImage, animalImage, plantImage, syntheticImage, cottonPage, animalPage, plantPage, syntheticPage)
-
-{
-    return `
+function ButtonContainerUI(
+  containerHeight = "450",
+  containerWidth = "450",
+  innerBoxWidthHeight = "200",
+  cottonImage,
+  animalImage,
+  plantImage,
+  syntheticImage,
+  cottonPage,
+  animalPage,
+  plantPage,
+  syntheticPage
+) {
+  return `
             <div 
             id="button-container"
             style='
@@ -118,13 +128,10 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 justify-content: flex-end;
                 flex-direction: column;
                 transition: 1s ease;
-           
                 '
-
                 id="synthetic"
                 onclick="window.location = '../pages/${syntheticPage}.html';"
                 >
-                
                 <img
                 style="width:5vh;
                 "
@@ -134,7 +141,7 @@ function ButtonContainerUI(containerHeight='450', containerWidth='450', innerBox
                 </div>
             </div>
      </div>
-    `
+    `;
 }
 
 // export const ButtonContainer = ButtonContainerUI();

@@ -1,398 +1,233 @@
 body {
   margin: 0;
-  background: #AF75BD;
+  background: #af75bd;
   overflow-x: hidden;
-
 }
 
 strong {
-  color: #3884FF;
+  color: #3884ff;
   font-weight: 800;
 }
 
-
-
-#water-resist-anim{
-
-    animation: 2s ease-in-out water-resist infinite;
-    transition: 1s ease;
-
-
-
+#water-resist-anim {
+  animation: 2s ease-in-out water-resist infinite;
+  transition: 1s ease;
 }
 
-#left-bone{
+#left-bone {
   animation: 2s ease left-bone infinite;
   transition: 1s ease;
 }
 
-#right-bone{
+#right-bone {
   animation: 2s ease left-bone infinite;
   transition: 1s ease;
 }
 
-
-.fuel{
+.fuel {
   animation: 3s ease fuel infinite;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-
-.bone{
+.bone {
   animation: 3s ease bone infinite;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.bolt{
+.bolt {
   animation: 2s ease bolt infinite;
   transition: 2s ease;
 }
 
-.cloud-left{
+.cloud-left {
   animation: 2s ease left-cloud infinite;
   transition: 2s ease;
 }
 
-.cloud-right{
+.cloud-right {
   animation: 2s ease right-cloud infinite;
   transition: 2s ease;
 }
 
-.move-top{
+.move-top {
   animation: 2s ease top-bar infinite;
   transition: 2s ease;
 }
 
-.move-mid{
+.move-mid {
   animation: 2s ease mid-bar infinite;
   transition: 2s ease;
 }
 
-.move-bot{
+.move-bot {
   animation: 2s ease bot-bar infinite;
   transition: 2s ease;
 }
 
-
-#water-resist-anim{
-
+#water-resist-anim {
   animation: 2s ease-in-out water-resist infinite;
   transition: 1s ease;
-
-
-
 }
 @keyframes water-resist {
-
-
-
-  0%{
-
+  0% {
     transform: translatex(100px);
-    
-
-
   }
 
-  50%{
-
+  50% {
     transform: translateY(0px);
     opacity: 100;
-
   }
 
-
- 
-
-  100%{
-
+  100% {
     transform: translate(0px);
     opacity: 0;
-
-      
-      
-  
-    }
-  
+  }
 }
 
 @keyframes left-bone {
-
-
-
-  0%{
-
+  0% {
     opacity: 0;
-
-
   }
 
-
-  50%{
-
-
+  50% {
     opacity: 100%;
+  }
 
-    }
-
-    100%{
-
-
-      opacity: 0;
-  
-      }
-  
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes right-bone {
-
-
-
-  0%{
-
+  0% {
     opacity: 0;
-
-
   }
 
-
-  100%{
-
-
+  100% {
     opacity: 1;
-
-    }
-  
+  }
 }
 
-#water-resist-anim-2{
-
+#water-resist-anim-2 {
   animation: 2s ease-in-out water-resist-2 infinite;
   transition: 2s ease;
-
-
-
 }
 
 @keyframes water-resist-2 {
-
-
-
-  0%{
-
+  0% {
     transform: translatex(-100px);
-    
-
   }
 
-  50%{
-
+  50% {
     transform: translateY(0px);
     opacity: 100;
   }
 
-
-  80%{
-   
+  80% {
   }
- 
 
-  100%{
-
+  100% {
     transform: translate(0px);
     opacity: 0;
-  
-
-    }
-
+  }
 }
 
 @keyframes fuel {
-
-
-
-  0%{
-
+  0% {
     opacity: 100%;
-
-
   }
 
-
-  50%{
-
-
+  50% {
     opacity: 0%;
+  }
 
-    }
-
-    100%{
-
-
-      opacity: 100%;
-  
-      }
-  
+  100% {
+    opacity: 100%;
+  }
 }
 
 @keyframes bone {
-
-
-
-  0%{
-
+  0% {
     opacity: 0%;
-
-
   }
 
-
-  50%{
-
-
+  50% {
     opacity: 100%;
+  }
 
-    }
-
-
-  100%{
+  100% {
     opacity: 0%;
   }
-  
 }
 
 @keyframes bolt {
-
-
-
-  0%{
-
-    opacity: 1;
-
-
-  }
-
-  50%{
-
-    opacity: 0;
-  }
-
-  75%{
-
+  0% {
     opacity: 1;
   }
 
-
-  100%{
-
-
+  50% {
     opacity: 0;
+  }
 
-    }
-  
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes left-cloud {
-
-
-
-  0%{
+  0% {
     transform: translate(50px);
     opacity: 1;
-
-
   }
 
-
-  100%{
-
+  100% {
     transform: translate(0px);
     opacity: 0;
-
-    }
-  
+  }
 }
 
 @keyframes right-cloud {
-
-
-
-  0%{
+  0% {
     transform: translate(-50px);
     opacity: 1;
-
-
   }
 
-
-  100%{
-
+  100% {
     transform: translate(0px);
     opacity: 0;
-
-    }
-  
+  }
 }
 
 @keyframes top-bar {
-
-
-
-  0%{
+  0% {
     transform: translateY(0px);
-   
-
-
   }
 
-
-  50%{
-
+  50% {
     transform: translateY(10px);
-
-
-    }
-  
+  }
 }
 
 @keyframes mid-bar {
-
-
-
-  0%{
+  0% {
     transform: translateY(0px);
-   
-
-
   }
 
-
-  50%{
-
+  50% {
     transform: translateY(15px);
-
-
-    }
-  
+  }
 }
 
 @keyframes bot-bar {
-
-
-
-  0%{
+  0% {
     transform: translateY(0px);
-   
-
-
   }
 
-
-  50%{
-
+  50% {
     transform: translateY(20px);
-
-
-    }
-  
+  }
 }

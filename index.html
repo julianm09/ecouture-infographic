@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecouture Infographic</title>
-    <meta name="description" content="Help Save The World!">
+    <meta name="description" content="Help Save The World!" />
 
-    <meta property="og:url"           content="https://taigomayes.github.io/ecouture-infographic/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Ecouture Infographic" />
-    <meta property="og:description"   content="Help save the world!" />
-    <meta property="og:image"         content="https://taigomayes.github.io/ecouture-infographic/comps/Resources/earth.png" />
+    <meta
+      property="og:url"
+      content="https://taigomayes.github.io/ecouture-infographic/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ecouture Infographic" />
+    <meta property="og:description" content="Help save the world!" />
+    <meta
+      property="og:image"
+      content="https://taigomayes.github.io/ecouture-infographic/comps/Resources/earth.png"
+    />
+  </head>
 
-
-
-</head>
-
-
-<body style="
-background:#51B27E;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-">
-
-
-    <img width="100px" src="./comps/Resources/earth.gif" alt="">
+  <body
+    style="
+      background: #51b27e;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    "
+  >
+    <img width="100px" src="./comps/Resources/earth.gif" alt="" />
 
     <script>
+      window.onload = () => {
+        //when window loads and completed levels exist go to nav page
+        if (localStorage.completedLevels) {
+          window.location.href = "./pages/nav.html";
 
-        
-        window.onload = () => {
-
-
-            setTimeout(function () {
-
-
-
-
-            //when window loads and completed levels exist go to nav page 
-            if(localStorage.completedLevels){
-
-
-                window.location.href = './pages/nav.html'
-
-                //when window loads and completed levels dont exist go to intro page 
-            } else {
-       
-                window.location.href = './pages/intro.html'
-            }
-
-
-        }, 1000);
-
-            
+          //when window loads and completed levels dont exist go to intro page
+        } else {
+          window.location.href = "./pages/intro.html";
         }
+      };
     </script>
-
-    
-</body>
+  </body>
 </html>

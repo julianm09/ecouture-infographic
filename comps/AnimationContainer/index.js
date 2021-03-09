@@ -1,7 +1,6 @@
-import placeholder from '../Resources/cotton-btn.svg'
+import placeholder from "../Resources/cotton-btn.svg";
 const Animation = () => {
-
-    return `
+  return `
     <div style="
         width: 250px;
         height: 300px;
@@ -43,7 +42,7 @@ const Animation = () => {
 
     
 
-    </div>`
-}
+    </div>`;
+};
 
 export const AnimationContainer = Animation();

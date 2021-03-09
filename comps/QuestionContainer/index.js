@@ -6,62 +6,44 @@ function QuestionUI(
   rightPath = "../../pages/nav.html",
   completed
 ) {
+  //get state from local storage
+  let completedState = {};
 
+  /* localStorage.completedLevels ? completedState = JSON.parse(localStorage.getItem("completedLevels")) : completedState = completedLevels
+   */
 
-//get state from local storage 
-let completedState = {}
+  console.log(initialState);
+  console.log(localStorage.completedLevels);
 
+  if (localStorage.completedLevels) {
+    console.log(localStorage);
+    completedState = JSON.parse(localStorage.getItem("completedLevels"));
+  } else {
+    completedState = initialState;
+  }
 
-/* localStorage.completedLevels ? completedState = JSON.parse(localStorage.getItem("completedLevels")) : completedState = completedLevels
- */
+  handleComplete = () => {};
 
-console.log(initialState)
-console.log(localStorage.completedLevels)
-
-if(localStorage.completedLevels){
-    console.log(localStorage)
-    completedState = JSON.parse(localStorage.getItem("completedLevels"))
-} else {
-    completedState = initialState
-}
-
-handleComplete = () => {
-
-    
-
-}
-
-//handle click of right answer
-right = (el) => {
-
-
-
-    completedState[completed] = true 
+  //handle click of right answer
+  right = (el) => {
+    completedState[completed] = true;
     localStorage.setItem("completedLevels", JSON.stringify(completedState));
     window.location.href = rightPath;
+  };
 
-}
+  //handle click of wrong answer
 
+  wrong = (el) => {
+    /*     window.location.href = wrongPath; */
 
-//handle click of wrong answer
+    const lastLocation = {};
 
-
-
-wrong = (el) => {
-/*     window.location.href = wrongPath; */
-
-
-const lastLocation = {}
-
-lastLocation.lastLocation = completed;
-completedState[completed] = true;
-localStorage.setItem("lastLocation", JSON.stringify(lastLocation));
-localStorage.setItem("completedLevels", JSON.stringify(completedState));
-window.location.href = wrongPath;
-
-
-}
-
+    lastLocation.lastLocation = completed;
+    completedState[completed] = true;
+    localStorage.setItem("lastLocation", JSON.stringify(lastLocation));
+    localStorage.setItem("completedLevels", JSON.stringify(completedState));
+    window.location.href = wrongPath;
+  };
 
   return `
 

@@ -1,18 +1,12 @@
-function BlueButtonUI(text="Continue", link="../index.html"){
+function BlueButtonUI(text = "Continue", link = "../index.html") {
+  handleClick = () => {
+    window.location.href = link;
+  };
 
-
-    handleClick = () => {
-       window.location.href = link
-
-    }
-
-
-    return `
+  return `
     <div 
     onclick="handleClick()"
     style="
-
-
     color: white;
     background-color: #3884FF;
     height:50px;
@@ -25,10 +19,9 @@ function BlueButtonUI(text="Continue", link="../index.html"){
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
     width: 80vw;
-
     ">
     ${text}
-    </div>`
+    </div>`;
 }
 
 //export const BlueButtonUI = MyBlueButtonUI();

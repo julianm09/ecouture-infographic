@@ -2,8 +2,7 @@
 import instagram from '../Resources/instagram.svg' */
 
 const Share = () => {
-
-    return `
+  return `
     <div>
         <div style="
             width: 250px;
@@ -55,8 +54,7 @@ const Share = () => {
 
 
     </div>
-    `
-}
-
+    `;
+};
 
 //export const ShareContainer = Share();

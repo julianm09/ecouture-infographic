@@ -1,6 +1,5 @@
 const ButtonWhiteUI = (img) => {
-
-    return `<div
+  return `<div
     style="
     background:white;
     border-radius: 10px;
@@ -15,8 +14,7 @@ const ButtonWhiteUI = (img) => {
     <img src=${img}
 
 
-    </div>`
-}
+    </div>`;
+};
 
-
-export const ButtonWhite = ButtonWhiteUI(); 
+export const ButtonWhite = ButtonWhiteUI();
